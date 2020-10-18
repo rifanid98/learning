@@ -1,2 +1,6 @@
 github.com/rifanid98/golang-modules v1.0.0 h1:9sjfeQaT+oWwhpSStsXSdLt4PL80y+sy/69TlcVBhnA=
 github.com/rifanid98/golang-modules v1.0.0/go.mod h1:86QaqNc0fERvRY/yt4iLeGOjvhc+sCoS7Wlt6JkABnU=
+github.com/rifanid98/golang-modules v1.5.0 h1:jYtKEuxFkVBE5UxAsj9KMqNWkymw/22rK4K/U8ZnO3Q=
+github.com/rifanid98/golang-modules v1.5.0/go.mod h1:86QaqNc0fERvRY/yt4iLeGOjvhc+sCoS7Wlt6JkABnU=
+github.com/rifanid98/golang-modules/v2 v2.0.0 h1:0XIrjivVWzGndIS+dMc4W9Gc6aBoYj/XnQUZjL427/U=
+github.com/rifanid98/golang-modules/v2 v2.0.0/go.mod h1:fXoncNEtUOT9y47v0eKkbdYGc9CqH33anU2CsE24ztw=

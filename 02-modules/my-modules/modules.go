@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 
-	mymodules "github.com/rifanid98/golang-modules"
+	mymodules "github.com/rifanid98/golang-modules/v2"
 )
 
 func main() {
-	fmt.Println(mymodules.SayHello())
+	name := "Adnin"
+	fmt.Println(mymodules.SayHello(name))
 }
