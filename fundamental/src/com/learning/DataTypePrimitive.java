@@ -1,9 +1,9 @@
 package com.learning;
 
 public class DataTypePrimitive {
+    private String name;
 
     public static void main(String[] args) {
-        int myInteger = 10;
         /*
         Primitive Data Type:
         -   int
@@ -15,6 +15,12 @@ public class DataTypePrimitive {
         -   char
         -   boolean
          */
+        int a; byte b; short c;
+        long d; double e; float f;
+        char g; boolean h;
+
+        int myInteger = 10;
+
         System.out.println("=========INTEGER==========");
         System.out.println("nilai integer " + myInteger);
         System.out.println("nilai max     " + Integer.MAX_VALUE);
