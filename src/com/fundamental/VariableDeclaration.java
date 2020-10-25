@@ -1,4 +1,4 @@
-package com.learning;
+package com.fundamental;
 
 public class VariableDeclaration {
 
