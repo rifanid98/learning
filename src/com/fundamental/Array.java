@@ -47,7 +47,7 @@ public class Array {
         int[] array1 = {1,2,3,4};   // [1,2,3,4]
         int[] array2 = array1;      // [1,2,3,4]
         array2[0] = 100;            // array1 = [100,2,3,4]
-                                    // array2 = [100,2,3,4]
+        // array2 = [100,2,3,4]
         System.out.println(array1[0]);
 
         /**
