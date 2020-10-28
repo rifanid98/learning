@@ -1,0 +1,42 @@
+<template>
+    <div>
+        <div>{{ count }}</div>
+        <button @click="decrement">-</button>
+        <button @click="increment">+</button>
+        <p>{{ minus }}</p>
+    </div>
+</template>
+
+<script>
+const E02Methods = {
+    name: 'E02Vmodel',
+    data() {
+        return {
+            count: 0,
+            minus: true
+        }
+    },
+    methods: {
+        increment() {
+            this.count++;
+            this.checkCount();
+        },
+        decrement() {
+            this.count--;
+            this.checkCount();
+        },
+        checkCount() {
+            console.log(this.minus);
+            if (this.count < 1) {
+                this.minus = false;
+                return; // exit from this function
+            } 
+
+            this.minus = true;
+            return; // exit from this function
+        }
+    }
+}
+
+export default E02Methods;
+</script>
