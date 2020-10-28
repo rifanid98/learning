@@ -13,7 +13,7 @@ public class AccessModifier {
         //
     }
 
-    /* bisa diakese oleh class manapun */
+    /* bisa diakses oleh class manapun */
     public static void methodPublic() {
         //
     }
