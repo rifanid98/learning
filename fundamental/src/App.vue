@@ -7,7 +7,8 @@
         <!-- <E05ForLoop /> -->
         <!-- <E06Component /> -->
         <!-- <E07LifeCycle /> -->
-        <E08VOnce />
+        <!-- <E08VOnce /> -->
+        <E08VHtml />
     </div>
 </template>
 
@@ -19,7 +20,8 @@
 // import E05ForLoop from "./components/E05ForLoop.vue";
 // import E06Component from "./components/E06Component.vue";
 // import E07LifeCycle from "./components/E07LifeCycle.vue";
-import E08VOnce from "./components/E08VOnce.vue";
+// import E08VOnce from "./components/E08VOnce.vue";
+import E08VHtml from "./components/E09VHtml.vue";
 
 const App = {
     name: 'App',
@@ -31,7 +33,8 @@ const App = {
         // E05ForLoop,
         // E06Component,
         // E07LifeCycle,
-        E08VOnce
+        // E08VOnce,
+        E08VHtml
     }
 }
 
