@@ -6,6 +6,7 @@
         <!-- <E04ConditionalRendering /> -->
         <!-- <E05ForLoop /> -->
         <!-- <E06Component /> -->
+        <E07LifeCycle />
     </div>
 </template>
 
@@ -15,17 +16,19 @@
 // import E03VModel from "./components/E03VModel.vue";
 // import E04ConditionalRendering from "./components/E04ConditionalRendering.vue";
 // import E05ForLoop from "./components/E05ForLoop.vue";
-import E06Component from "./components/E06Component.vue";
+// import E06Component from "./components/E06Component.vue";
+import E07LifeCycle from "./components/E07LifeCycle.vue";
 
 const App = {
     name: 'App',
     components: {
         // E01DeclarativeRendering,
         // E02Methods,
-        // E03VModel
-        // E04ConditionalRendering
-        // E05ForLoop
-        // E06Component
+        // E03VModel,
+        // E04ConditionalRendering,
+        // E05ForLoop,
+        // E06Component,
+        E07LifeCycle
     }
 }
 
