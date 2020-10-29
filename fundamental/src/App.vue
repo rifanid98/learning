@@ -8,7 +8,9 @@
         <!-- <E06Component /> -->
         <!-- <E07LifeCycle /> -->
         <!-- <E08VOnce /> -->
-        <E08VHtml />
+        <!-- <E08VHtml /> -->
+        <!-- <E10Computed /> -->
+        <E11ComputedSetterGetter />
     </div>
 </template>
 
@@ -21,7 +23,9 @@
 // import E06Component from "./components/E06Component.vue";
 // import E07LifeCycle from "./components/E07LifeCycle.vue";
 // import E08VOnce from "./components/E08VOnce.vue";
-import E08VHtml from "./components/E09VHtml.vue";
+// import E08VHtml from "./components/E09VHtml.vue";
+// import E10Computed from "./components/E10Computed.vue";
+import E11ComputedSetterGetter from "./components/E11ComputedSetterGetter.vue";
 
 const App = {
     name: 'App',
@@ -34,7 +38,9 @@ const App = {
         // E06Component,
         // E07LifeCycle,
         // E08VOnce,
-        E08VHtml
+        // E08VHtml,
+        // E10Computed,
+        E11ComputedSetterGetter
     }
 }
 
