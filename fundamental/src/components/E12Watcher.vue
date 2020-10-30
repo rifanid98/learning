@@ -7,7 +7,7 @@
 </template>
 
 <script>
-const E12Watcher = {
+export default {
     name: 'E12Watcher',
     data() {
         return {
@@ -20,6 +20,4 @@ const E12Watcher = {
         }
     }
 }
-
-export default E12Watcher;
 </script>

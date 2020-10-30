@@ -3,7 +3,7 @@
 </template>
 
 <script>
-const E06Component = {
+export default {
     name: 'E06Component',
     data() {
         return {
@@ -11,6 +11,4 @@ const E06Component = {
         }
     }
 }
-
-export default E06Component;
 </script>

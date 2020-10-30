@@ -13,7 +13,7 @@
 </template>
 
 <script>
-const E05ForLoop = {
+export default {
     name: 'E05ForLoop',
     data() {
         return {
@@ -24,6 +24,4 @@ const E05ForLoop = {
         }
     }
 }
-
-export default E05ForLoop;
 </script>

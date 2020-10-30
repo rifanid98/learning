@@ -7,7 +7,7 @@
 </template>
 
 <script>
-const E08VOnce = {
+export default {
     name: 'E08VOnce',
     data() {
         return {
@@ -15,6 +15,4 @@ const E08VOnce = {
         }
     }
 }
-
-export default E08VOnce;
 </script>

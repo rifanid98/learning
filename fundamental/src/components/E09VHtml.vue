@@ -6,7 +6,7 @@
 </template>
 
 <script>
-const E08VHtml = {
+export default {
     name: 'E08VHtml',
     data() {
         return {
@@ -14,6 +14,4 @@ const E08VHtml = {
         }
     }
 }
-
-export default E08VHtml;
 </script>

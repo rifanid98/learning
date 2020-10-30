@@ -8,7 +8,7 @@
 </template>
 
 <script>
-const E07LifeCycle = {
+export default {
     name: 'E07LifeCycle',
     // state
     data() {
@@ -57,6 +57,4 @@ const E07LifeCycle = {
         }
     }
 }
-
-export default E07LifeCycle;
 </script>

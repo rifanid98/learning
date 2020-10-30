@@ -13,7 +13,7 @@
 </template>
 
 <script>
-const E03VModel = {
+export default {
     name: 'E03VModel',
     data() {
         return {
@@ -22,6 +22,4 @@ const E03VModel = {
         }
     }
 }
-
-export default E03VModel;
 </script>

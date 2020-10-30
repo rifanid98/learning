@@ -7,7 +7,7 @@
 </template>
 
 <script>
-const HelloWorld = {
+export default {
     name: 'HelloWorld',
     props: {
         msg: String
@@ -18,6 +18,4 @@ const HelloWorld = {
         }
     }
 }
-
-export default HelloWorld;
 </script>

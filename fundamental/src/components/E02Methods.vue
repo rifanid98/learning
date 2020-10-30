@@ -8,7 +8,7 @@
 </template>
 
 <script>
-const E02Methods = {
+export default {
     name: 'E02Vmodel',
     data() {
         return {
@@ -37,6 +37,4 @@ const E02Methods = {
         }
     }
 }
-
-export default E02Methods;
 </script>

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-const E01DeclarativeRendering = {
+export default {
     name: 'E01DeclarativeRendering',
     data() {
         return {
@@ -14,6 +14,4 @@ const E01DeclarativeRendering = {
         }
     }
 }
-
-export default E01DeclarativeRendering;
 </script>

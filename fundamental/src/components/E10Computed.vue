@@ -10,7 +10,7 @@
 </template>
 
 <script>
-const E10Computed = {
+export default {
     name: 'E10Computed',
     data() {
         return {
@@ -29,6 +29,4 @@ const E10Computed = {
         }
     }
 }
-
-export default E10Computed;
 </script>

@@ -14,7 +14,7 @@
 </template>
 
 <script>
-const E04ConditionalRendering = {
+export default {
     name: 'E04ConditionalRendering',
     data() {
         return {
@@ -41,6 +41,4 @@ const E04ConditionalRendering = {
         }
     }
 }
-
-export default E04ConditionalRendering;
 </script>

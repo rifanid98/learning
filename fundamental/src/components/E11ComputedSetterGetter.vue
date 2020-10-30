@@ -15,7 +15,7 @@
 </template>
 
 <script>
-const E11ComputedSetterGetter = {
+export default {
     name: 'E11ComputedSetterGetter',
     data() {
         return {
@@ -48,6 +48,4 @@ const E11ComputedSetterGetter = {
         }
     }
 }
-
-export default E11ComputedSetterGetter;
 </script>

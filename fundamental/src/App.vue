@@ -11,7 +11,8 @@
         <!-- <E08VHtml /> -->
         <!-- <E10Computed /> -->
         <!-- <E11ComputedSetterGetter /> -->
-        <E12Watcher />
+        <!-- <E12Watcher /> -->
+        <E13DynamicCSSPropertyValue />
     </div>
 </template>
 
@@ -27,7 +28,8 @@
 // import E08VHtml from "./components/E09VHtml.vue";
 // import E10Computed from "./components/E10Computed.vue";
 // import E11ComputedSetterGetter from "./components/E11ComputedSetterGetter.vue";
-import E12Watcher from "./components/E12Watcher.vue";
+// import E12Watcher from "./components/E12Watcher.vue";
+import E13DynamicCSSPropertyValue from "./components/E13DynamicCSSPropertyValue.vue";
 
 const App = {
     name: 'App',
@@ -43,7 +45,8 @@ const App = {
         // E08VHtml,
         // E10Computed,
         // E11ComputedSetterGetter,
-        E12Watcher
+        // E12Watcher,
+        E13DynamicCSSPropertyValue,
     }
 }
 
