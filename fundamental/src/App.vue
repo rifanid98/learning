@@ -10,7 +10,8 @@
         <!-- <E08VOnce /> -->
         <!-- <E08VHtml /> -->
         <!-- <E10Computed /> -->
-        <E11ComputedSetterGetter />
+        <!-- <E11ComputedSetterGetter /> -->
+        <E12Watcher />
     </div>
 </template>
 
@@ -25,7 +26,8 @@
 // import E08VOnce from "./components/E08VOnce.vue";
 // import E08VHtml from "./components/E09VHtml.vue";
 // import E10Computed from "./components/E10Computed.vue";
-import E11ComputedSetterGetter from "./components/E11ComputedSetterGetter.vue";
+// import E11ComputedSetterGetter from "./components/E11ComputedSetterGetter.vue";
+import E12Watcher from "./components/E12Wather.vue";
 
 const App = {
     name: 'App',
@@ -40,7 +42,8 @@ const App = {
         // E08VOnce,
         // E08VHtml,
         // E10Computed,
-        E11ComputedSetterGetter
+        // E11ComputedSetterGetter,
+        E12Watcher
     }
 }
 
