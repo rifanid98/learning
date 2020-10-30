@@ -27,7 +27,7 @@
 // import E08VHtml from "./components/E09VHtml.vue";
 // import E10Computed from "./components/E10Computed.vue";
 // import E11ComputedSetterGetter from "./components/E11ComputedSetterGetter.vue";
-import E12Watcher from "./components/E12Wather.vue";
+import E12Watcher from "./components/E12Watcher.vue";
 
 const App = {
     name: 'App',
