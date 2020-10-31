@@ -11,7 +11,9 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/fundamental": true,
-        "**/chapter**": true
+        // golang
+        "**/golang**": true,
+        // vue
+        "**/vue**": true
     }
 }
