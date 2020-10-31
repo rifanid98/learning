@@ -16,6 +16,6 @@
         "**/out": true,
         "**/src": true,
         // vue
-        "**/chapter**": true
+        "**/vue**": true
     }
 }
