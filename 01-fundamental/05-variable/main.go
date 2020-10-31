@@ -22,8 +22,7 @@ func main() {
 	/**
 	style 4, multiple variable
 
-	style 3 no supported var, so you cann't use
-	style 3 in style 4
+	style 3 not supported var, so you cann't use style 3 in style 4
 	*/
 	var (
 		newName    string = "New Name" // style 1

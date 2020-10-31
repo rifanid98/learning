@@ -10,7 +10,7 @@ func main() {
 	to converting value to other data type,
 	the value must be smaller than the previous data type.
 
-	You can convert variable values from high to low,
+	You can convert variable values from low to high,
 	but not vice versa.
 
 	If the value of the variable that is converted
