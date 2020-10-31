@@ -1,0 +1,16 @@
+{
+    "editor.fontSize": 13,
+    "editor.fontFamily": "'Cascadia Code','Iosevka','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "diffEditor.codeLens": true,
+    "editor.autoClosingBrackets": "always",
+    "go.formatTool": "goimports",
+    "editor.suggestSelection": "first",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/fundamental": true
+    }
+}
