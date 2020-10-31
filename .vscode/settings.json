@@ -12,6 +12,6 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/fundamental": true,
-        "**/chapter01_fundamental": true
+        "**/chapter**": true
     }
 }
