@@ -141,6 +141,7 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
 
 # Dependency directories
 node_modules/
@@ -251,6 +252,7 @@ out/
 
 # Gradle files
 .gradle/
+build/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -510,8 +512,10 @@ $RECYCLE.BIN/
 # Log Files
 
 # Android Studio
+/*/build/
 /*/local.properties
 /*/out
+/*/*/build
 /*/*/production
 *.ipr
 *.swp
