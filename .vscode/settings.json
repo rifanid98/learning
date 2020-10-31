@@ -11,9 +11,11 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
+        // java
         "**/.idea": true,
         "**/out": true,
         "**/src": true,
-        "**/fundamental": true
+        // vue
+        "**/chapter**": true
     }
 }
