@@ -16,6 +16,9 @@
         "**/out": true,
         "**/src": true,
         // vue
-        "**/vue**": true
+        "**/vue**": true,
+        // typescript
+        "**/build": true,
+        "**/node_modules": true,
     }
 }
