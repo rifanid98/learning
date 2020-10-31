@@ -35,7 +35,7 @@ class Person {
     }
 }
 
-public class PublicPrivateModifier {
+public class PublicPrivateKeyword {
 
     public static void main(String[] args) {
         Person adnin = new Person("Adnin", 22);
