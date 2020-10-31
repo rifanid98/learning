@@ -1,3 +1,3 @@
-# Learning Go-Lang
+# Learning TypeScript
 
-Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
+English-TypeScript is a programming language developed and maintained by Microsoft. This is a strict syntactic superset of JavaScript and adds optional static typing to the language. TypeScript is designed for large application development and is transcompiled to JavaScript.
