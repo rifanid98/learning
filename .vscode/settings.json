@@ -14,6 +14,9 @@
         // golang
         "**/golang**": true,
         // vue
-        "**/vue**": true
+        "**/vue**": true,
+        // typescript
+        "**/build": true,
+        "**/node_modules": true,
     }
 }
