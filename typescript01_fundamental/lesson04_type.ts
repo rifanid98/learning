@@ -1,6 +1,0 @@
-/**
- * type
- */
-(function() {
-    type Name = "";
-})();
