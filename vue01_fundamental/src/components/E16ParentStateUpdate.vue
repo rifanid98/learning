@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'E16ParentStateUpdateFromChild',
+    name: 'E16ParentStateUpdate',
     props: {
         modelValue: String
     },

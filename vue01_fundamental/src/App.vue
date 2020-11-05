@@ -14,21 +14,33 @@
         <!-- <E12Watcher /> -->
         <!-- <E13DynamicCSSPropertyValue /> -->
 
-        <!-- <E14Emits @child-click="getChildClick" v-bind:value="false"/>
-        <E14Emits @child-click-with-value="getChildClickWithValue" v-bind:value="true"/> -->
+        <!-- E14Emits -->
+            <!-- <E14Emits @child-click="getChildClick" v-bind:value="false"/>
+            <E14Emits @child-click-with-value="getChildClickWithValue" v-bind:value="true"/> -->
 
-        <!-- <E15Refs ref="E15Refs" />
-        <button @click="execE15RefsMethods">execute E15Refs methods</button> -->
+        <!-- E15Refs -->
+            <!-- <E15Refs ref="E15Refs" />
+            <button @click="execE15RefsMethods">execute E15Refs methods</button> -->
         
-        <!-- <div>{{ message }}</div> -->
-        <!-- cara 1 -->
-        <!-- <E16ParentStateUpdateFromChild 
-            :model-value="message" 
-            @update:model-value="message = $event" 
-        /> -->
-        <!-- cara 2 -->
-        <!-- <E16ParentStateUpdateFromChild v-model="message" /> -->
+        <!-- E16ParentStateUpdate -->
+            <!-- <div>{{ message }}</div> -->
 
+            <!-- CARA 1 -->
+
+            <!-- :model-value="message" is getter -->
+            <!-- @update:model-value="message = $event" is setter -->
+            <!-- <E16ParentStateUpdate 
+                :model-value="message" 
+                @update:model-value="message = $event" 
+            /> -->
+            
+            <!-- CARA 2 -->
+            <!-- <E16ParentStateUpdate v-model="message" /> -->
+
+        <!-- E17ParentStateUpdateComputed -->
+            <!-- v-model="message" is getter + setter -->
+            <div>{{ message }}</div>
+            <E17ParentStateUpdateComputed v-model="message" />
     </div>
 </template>
 
@@ -48,13 +60,15 @@
 // import E13DynamicCSSPropertyValue from "./components/E13DynamicCSSPropertyValue.vue";
 // import E14Emits from "./components/E14Emits.vue";
 // import E15Refs from "./components/E15Refs.vue";
-// import E16ParentStateUpdateFromChild from './components/E16ParentStateUpdateFromChild.vue';
+// import E16ParentStateUpdate from './components/E16ParentStateUpdate.vue';
+import E17ParentStateUpdateComputed from './components/E17ParentStateUpdateComputed.vue';
 
 const App = {
     name: 'App',
     data() {
         return {
-            message: 'default message'
+            message: 'default message',
+            pesan: 'default pesan'
         }
     },
     components: {
@@ -73,7 +87,8 @@ const App = {
         // E13DynamicCSSPropertyValue,
         // E14Emits,
         // E15Refs,
-        // E16ParentStateUpdateFromChild
+        // E16ParentStateUpdate,
+        E17ParentStateUpdateComputed
     },
     methods: {
         /** E14Emits */
