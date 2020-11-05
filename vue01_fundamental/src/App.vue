@@ -12,7 +12,11 @@
         <!-- <E10Computed /> -->
         <!-- <E11ComputedSetterGetter /> -->
         <!-- <E12Watcher /> -->
-        <E13DynamicCSSPropertyValue />
+        <!-- <E13DynamicCSSPropertyValue /> -->
+        <!-- <E14Emits @child-click="getChildClick" v-bind:value="false"/>
+        <E14Emits @child-click-with-value="getChildClickWithValue" v-bind:value="true"/> -->
+        <!-- <E15Refs ref="E15Refs" />
+        <button @click="execE15RefsMethods">execute E15Refs methods</button> -->
     </div>
 </template>
 
@@ -29,7 +33,9 @@
 // import E10Computed from "./components/E10Computed.vue";
 // import E11ComputedSetterGetter from "./components/E11ComputedSetterGetter.vue";
 // import E12Watcher from "./components/E12Watcher.vue";
-import E13DynamicCSSPropertyValue from "./components/E13DynamicCSSPropertyValue.vue";
+// import E13DynamicCSSPropertyValue from "./components/E13DynamicCSSPropertyValue.vue";
+// import E14Emits from "./components/E14Emits.vue";
+// import E15Refs from "./components/E15Refs.vue";
 
 const App = {
     name: 'App',
@@ -46,7 +52,22 @@ const App = {
         // E10Computed,
         // E11ComputedSetterGetter,
         // E12Watcher,
-        E13DynamicCSSPropertyValue,
+        // E13DynamicCSSPropertyValue,
+        // E14Emits,
+        // E15Refs
+    },
+    methods: {
+        /** E14Emits */
+        // getChildClick() {
+        //     console.log('child-click clicked');
+        // },
+        // getChildClickWithValue(value) {
+        //     console.log('child-click-with-value clicked, value is : ' + value);
+        // },
+        /** E15Refs */
+        // execE15RefsMethods() {
+        //     this.$refs.E15Refs.ExecE15RefsMethods();
+        // }
     }
 }
 

@@ -14,10 +14,8 @@
         // java
         "**/.idea": true,
         "**/out": true,
-        "**/src": true,
         // typescript
         "**/build": true,
         "**/node_modules": true,
-        
     }
 }
