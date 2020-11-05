@@ -13,10 +13,22 @@
         <!-- <E11ComputedSetterGetter /> -->
         <!-- <E12Watcher /> -->
         <!-- <E13DynamicCSSPropertyValue /> -->
+
         <!-- <E14Emits @child-click="getChildClick" v-bind:value="false"/>
         <E14Emits @child-click-with-value="getChildClickWithValue" v-bind:value="true"/> -->
+
         <!-- <E15Refs ref="E15Refs" />
         <button @click="execE15RefsMethods">execute E15Refs methods</button> -->
+        
+        <!-- <div>{{ message }}</div> -->
+        <!-- cara 1 -->
+        <!-- <E16ParentStateUpdateFromChild 
+            :model-value="message" 
+            @update:model-value="message = $event" 
+        /> -->
+        <!-- cara 2 -->
+        <!-- <E16ParentStateUpdateFromChild v-model="message" /> -->
+
     </div>
 </template>
 
@@ -36,9 +48,15 @@
 // import E13DynamicCSSPropertyValue from "./components/E13DynamicCSSPropertyValue.vue";
 // import E14Emits from "./components/E14Emits.vue";
 // import E15Refs from "./components/E15Refs.vue";
+// import E16ParentStateUpdateFromChild from './components/E16ParentStateUpdateFromChild.vue';
 
 const App = {
     name: 'App',
+    data() {
+        return {
+            message: 'default message'
+        }
+    },
     components: {
         // E01DeclarativeRendering,
         // E02Methods,
@@ -54,7 +72,8 @@ const App = {
         // E12Watcher,
         // E13DynamicCSSPropertyValue,
         // E14Emits,
-        // E15Refs
+        // E15Refs,
+        // E16ParentStateUpdateFromChild
     },
     methods: {
         /** E14Emits */
