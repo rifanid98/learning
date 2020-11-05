@@ -7,12 +7,8 @@ console.log(getAny("string").length);   // 6
 console.log(getAny(20).length);         // undefined. karena bukan string, jadi gapunya length. 
                                         // not secure juga akhirnya kalo gini
 
-/**
- * Generic
- */
-
 /** 
- * generic function
+ * Generic Function
  */
 // function() {}
 function getGeneric<T>(value: T): T {
@@ -33,7 +29,7 @@ const genericArrowFunction2 = <T, > (value: T): T => {
 }
 
 /**
- * generic class
+ * Generic Class
  */
 class List<T> {
     private data: T[];
