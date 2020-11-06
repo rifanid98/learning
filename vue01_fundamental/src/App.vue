@@ -1,109 +1,35 @@
 <template>
     <div>
-        <!-- <E01DeclarativeRendering /> -->
-        <!-- <E02Methods /> -->
-        <!-- <E03VModel /> -->
-        <!-- <E04ConditionalRendering /> -->
-        <!-- <E05ForLoop /> -->
-        <!-- <E06Component /> -->
-        <!-- <E07LifeCycle /> -->
-        <!-- <E08VOnce /> -->
-        <!-- <E08VHtml /> -->
-        <!-- <E10Computed /> -->
-        <!-- <E11ComputedSetterGetter /> -->
-        <!-- <E12Watcher /> -->
-        <!-- <E13DynamicCSSPropertyValue /> -->
+        <!-- E21PropTypes -->
+            <!-- use default prop value -->
+            <!-- <E21PropTypes /> -->
+            <!-- use custom props value / props assignment -->
+            <!-- <E21PropTypes name="Adnin" :age="22" /> -->
 
-        <!-- E14Emits -->
-            <!-- <E14Emits @child-click="getChildClick" v-bind:value="false"/>
-            <E14Emits @child-click-with-value="getChildClickWithValue" v-bind:value="true"/> -->
+        <!-- E22ProvideInject -->
+            <!-- <E22ProvideInject /> -->
 
-        <!-- E15Refs -->
-            <!-- <E15Refs ref="E15Refs" />
-            <button @click="execE15RefsMethods">execute E15Refs methods</button> -->
-        
-        <!-- E16ParentStateUpdate -->
-            <!-- <div>{{ message }}</div> -->
-
-            <!-- CARA 1 -->
-
-            <!-- :model-value="message" is getter -->
-            <!-- @update:model-value="message = $event" is setter -->
-            <!-- <E16ParentStateUpdate 
-                :model-value="message" 
-                @update:model-value="message = $event" 
-            /> -->
-            
-            <!-- CARA 2 -->
-            <!-- <E16ParentStateUpdate v-model="message" /> -->
-
-        <!-- E17ParentStateUpdateComputed -->
-            <!-- v-model="message" is getter + setter -->
-            <div>{{ message }}</div>
-            <E17ParentStateUpdateComputed v-model="message" />
+        <!-- E23KeepAlive -->
+            <E23KeepAlive />
     </div>
 </template>
 
 <script>
-// import E01DeclarativeRendering from "./components/E01DeclarativeRendering.vue";
-// import E02Methods from "./components/E02Methods.vue";
-// import E03VModel from "./components/E03VModel.vue";
-// import E04ConditionalRendering from "./components/E04ConditionalRendering.vue";
-// import E05ForLoop from "./components/E05ForLoop.vue";
-// import E06Component from "./components/E06Component.vue";
-// import E07LifeCycle from "./components/E07LifeCycle.vue";
-// import E08VOnce from "./components/E08VOnce.vue";
-// import E08VHtml from "./components/E09VHtml.vue";
-// import E10Computed from "./components/E10Computed.vue";
-// import E11ComputedSetterGetter from "./components/E11ComputedSetterGetter.vue";
-// import E12Watcher from "./components/E12Watcher.vue";
-// import E13DynamicCSSPropertyValue from "./components/E13DynamicCSSPropertyValue.vue";
-// import E14Emits from "./components/E14Emits.vue";
-// import E15Refs from "./components/E15Refs.vue";
-// import E16ParentStateUpdate from './components/E16ParentStateUpdate.vue';
-import E17ParentStateUpdateComputed from './components/E17ParentStateUpdateComputed.vue';
+// import E21PropTypes from './components/E21PropTypes.vue';
+// import E22ProvideInject from './components/E22ProvideInject.vue';
+import E23KeepAlive from './components/E23KeepAlive.vue';
 
-const App = {
+export default {
     name: 'App',
+    components: {
+        // E21PropTypes,
+        // E22ProvideInject,
+        E23KeepAlive
+    },
     data() {
         return {
-            message: 'default message',
-            pesan: 'default pesan'
+            
         }
-    },
-    components: {
-        // E01DeclarativeRendering,
-        // E02Methods,
-        // E03VModel,
-        // E04ConditionalRendering,
-        // E05ForLoop,
-        // E06Component,
-        // E07LifeCycle,
-        // E08VOnce,
-        // E08VHtml,
-        // E10Computed,
-        // E11ComputedSetterGetter,
-        // E12Watcher,
-        // E13DynamicCSSPropertyValue,
-        // E14Emits,
-        // E15Refs,
-        // E16ParentStateUpdate,
-        E17ParentStateUpdateComputed
-    },
-    methods: {
-        /** E14Emits */
-        // getChildClick() {
-        //     console.log('child-click clicked');
-        // },
-        // getChildClickWithValue(value) {
-        //     console.log('child-click-with-value clicked, value is : ' + value);
-        // },
-        /** E15Refs */
-        // execE15RefsMethods() {
-        //     this.$refs.E15Refs.ExecE15RefsMethods();
-        // }
     }
 }
-
-export default App;
 </script>
