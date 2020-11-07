@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson13_inheritance.inheritance;
+package com.java02_oop.lesson13_inheritance.inheritance;
 
 public class Car extends Vehicle {
     private String carType;

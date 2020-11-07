@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson19_strings;
+package com.java01_fundamental.lesson19_strings;
 
 public class Main {
 

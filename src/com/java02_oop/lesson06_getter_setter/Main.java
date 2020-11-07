@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson06_getter_setter;
+package com.java02_oop.lesson06_getter_setter;
 
 class Data {
     public int intPublic;

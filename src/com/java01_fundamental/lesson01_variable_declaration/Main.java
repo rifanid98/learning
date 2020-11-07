@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson01_variable_declaration;
+package com.java01_fundamental.lesson01_variable_declaration;
 
 public class Main {
 

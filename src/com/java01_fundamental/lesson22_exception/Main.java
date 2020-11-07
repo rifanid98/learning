@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson22_exception;
+package com.java01_fundamental.lesson22_exception;
 
 public class Main {
 

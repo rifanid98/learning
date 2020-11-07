@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson11_grouping_arithmetic_operation;
+package com.java01_fundamental.lesson11_grouping_arithmetic_operation;
 
 public class Main {
 

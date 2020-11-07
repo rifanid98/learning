@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson23_io_stream;
+package com.java01_fundamental.lesson23_io_stream;
 
 import java.io.FileInputStream;
 import java.io.IOException;

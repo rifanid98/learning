@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson11_hierarchy_package;
+package com.java02_oop.lesson11_hierarchy_package;
 
 /* Secara default, code kita akan dicompile dan apabila
  * terdapat beberapa class dalam 1 file, makan ketika

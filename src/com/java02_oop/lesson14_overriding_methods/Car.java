@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson14_overriding_methods;
+package com.java02_oop.lesson14_overriding_methods;
 
 public class Car {
     String name;

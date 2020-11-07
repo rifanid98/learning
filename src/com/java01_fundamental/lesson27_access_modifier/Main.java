@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson27_access_modifier;
+package com.java01_fundamental.lesson27_access_modifier;
 
 public class Main {
 

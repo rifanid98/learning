@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson26_buffered_stream;
+package com.java01_fundamental.lesson26_buffered_stream;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

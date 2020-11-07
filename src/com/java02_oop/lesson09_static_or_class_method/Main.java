@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson09_static_or_class_method;
+package com.java02_oop.lesson09_static_or_class_method;
 
 import java.util.ArrayList;
 

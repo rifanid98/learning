@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson16_function_method;
+package com.java01_fundamental.lesson16_function_method;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson03_methods;
+package com.java02_oop.lesson03_methods;
 
 class Method {
     String string;

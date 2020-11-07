@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson08_logic_operator;
+package com.java01_fundamental.lesson08_logic_operator;
 
 public class Main {
 

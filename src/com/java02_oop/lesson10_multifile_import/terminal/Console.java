@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson10_multifile_import.terminal;
+package com.java02_oop.lesson10_multifile_import.terminal;
 
 public class Console {
 

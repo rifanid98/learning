@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson07_comparasion_operator;
+package com.java01_fundamental.lesson07_comparasion_operator;
 
 public class Main {
 

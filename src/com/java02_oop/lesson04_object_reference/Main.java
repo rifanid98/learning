@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson04_object_reference;
+package com.java02_oop.lesson04_object_reference;
 
 class Book {
     String name;

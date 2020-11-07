@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson02_constructor;
+package com.java02_oop.lesson02_constructor;
 
 class WithoutConstructor {
     String string;

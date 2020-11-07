@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson08_static_attribute_property_or_class_variable;
+package com.java02_oop.lesson08_static_attribute_property_or_class_variable;
 
 /**
  * Static Attribute == Class Variable

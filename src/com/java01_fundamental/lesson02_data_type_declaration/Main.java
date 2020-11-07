@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson02_data_type_declaration;
+package com.java01_fundamental.lesson02_data_type_declaration;
 
 public class Main {
     private String name;

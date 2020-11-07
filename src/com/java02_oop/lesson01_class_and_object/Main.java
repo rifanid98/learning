@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson01_class_and_object;
+package com.java02_oop.lesson01_class_and_object;
 
 class ClassObject {
     String name;

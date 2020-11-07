@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson15_super;
+package com.java02_oop.lesson15_super;
 
 public class ChildClass extends ParentClass {
     String name;

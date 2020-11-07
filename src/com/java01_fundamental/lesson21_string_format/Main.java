@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson21_string_format;
+package com.java01_fundamental.lesson21_string_format;
 
 public class Main {
 

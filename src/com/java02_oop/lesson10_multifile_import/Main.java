@@ -1,7 +1,7 @@
-package com.chapter02_oop.lesson10_multifile_import;
+package com.java02_oop.lesson10_multifile_import;
 
-import com.chapter02_oop.lesson11_hierarchy_package.WithPackage;
-import com.chapter02_oop.lesson10_multifile_import.terminal.Console;
+import com.java02_oop.lesson11_hierarchy_package.WithPackage;
+import com.java02_oop.lesson10_multifile_import.terminal.Console;
 
 public class Main {
 

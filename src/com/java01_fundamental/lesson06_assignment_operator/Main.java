@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson06_assignment_operator;
+package com.java01_fundamental.lesson06_assignment_operator;
 
 public class Main {
 

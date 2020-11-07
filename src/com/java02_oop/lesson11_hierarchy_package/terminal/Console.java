@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson11_hierarchy_package.terminal;
+package com.java02_oop.lesson11_hierarchy_package.terminal;
 
 public class Console {
 

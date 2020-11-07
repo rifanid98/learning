@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson18_array;
+package com.java01_fundamental.lesson18_array;
 
 import java.util.Arrays;
 

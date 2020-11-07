@@ -1,7 +1,7 @@
-package com.chapter02_oop.lesson13_inheritance;
+package com.java02_oop.lesson13_inheritance;
 
-import com.chapter02_oop.lesson13_inheritance.inheritance.Avanza;
-import com.chapter02_oop.lesson13_inheritance.inheritance.Lamborghini;
+import com.java02_oop.lesson13_inheritance.inheritance.Avanza;
+import com.java02_oop.lesson13_inheritance.inheritance.Lamborghini;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson24_byte_stream;
+package com.java01_fundamental.lesson24_byte_stream;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

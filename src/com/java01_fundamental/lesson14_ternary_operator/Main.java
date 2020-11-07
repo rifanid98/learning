@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson14_ternary_operator;
+package com.java01_fundamental.lesson14_ternary_operator;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson15_looping;
+package com.java01_fundamental.lesson15_looping;
 
 public class Main {
 

@@ -1,7 +1,7 @@
-package com.chapter02_oop.lesson11_hierarchy_package;
+package com.java02_oop.lesson11_hierarchy_package;
 
-import com.chapter02_oop.lesson11_hierarchy_package.terminal.Console;
-import static com.chapter02_oop.lesson11_hierarchy_package.terminal.Console.log;
+import com.java02_oop.lesson11_hierarchy_package.terminal.Console;
+import static com.java02_oop.lesson11_hierarchy_package.terminal.Console.log;
 
 /*
  * access modifier dari class :

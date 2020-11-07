@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson00_opening;
+package com.java01_fundamental.lesson00_opening;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson03_arithmetic_operator;
+package com.java01_fundamental.lesson03_arithmetic_operator;
 
 public class Main {
 

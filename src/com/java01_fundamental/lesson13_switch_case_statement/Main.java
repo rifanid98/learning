@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson13_switch_case_statement;
+package com.java01_fundamental.lesson13_switch_case_statement;
 
 public class Main {
 

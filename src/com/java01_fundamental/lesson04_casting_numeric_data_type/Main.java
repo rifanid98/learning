@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson04_casting_numeric_data_type;
+package com.java01_fundamental.lesson04_casting_numeric_data_type;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson16_subclass_constructor;
+package com.java02_oop.lesson16_subclass_constructor;
 
 public class Main {
 

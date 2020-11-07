@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson05_unary_operator;
+package com.java01_fundamental.lesson05_unary_operator;
 
 public class Main {
 

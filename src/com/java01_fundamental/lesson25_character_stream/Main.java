@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson25_character_stream;
+package com.java01_fundamental.lesson25_character_stream;
 
 import java.io.FileInputStream;
 import java.io.FileReader;

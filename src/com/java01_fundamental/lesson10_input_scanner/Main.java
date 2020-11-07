@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson10_input_scanner;
+package com.java01_fundamental.lesson10_input_scanner;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson20_string_builder;
+package com.java01_fundamental.lesson20_string_builder;
 
 import java.lang.StringBuilder;
 

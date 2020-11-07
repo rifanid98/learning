@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson05_public_private_keyword;
+package com.java02_oop.lesson05_public_private_keyword;
 
 class Person {
     String name;            // default -> +wr from inside or outside of class

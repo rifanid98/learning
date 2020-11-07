@@ -1,4 +1,4 @@
-package com.chapter02_oop.lesson07_training;
+package com.java02_oop.lesson07_training;
 
 class Player {
     String name;

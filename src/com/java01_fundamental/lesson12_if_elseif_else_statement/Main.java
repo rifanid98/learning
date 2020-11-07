@@ -1,4 +1,4 @@
-package com.chapter01_fundamental.lesson12_if_elseif_else_statement;
+package com.java01_fundamental.lesson12_if_elseif_else_statement;
 
 public class Main {
 
