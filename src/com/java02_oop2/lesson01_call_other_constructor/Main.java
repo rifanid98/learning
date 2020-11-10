@@ -1,6 +1,6 @@
 package com.java02_oop2.lesson01_call_other_constructor;
 
-class Person {
+class Person extends Object {
     private String name;
     private String address;
 
@@ -9,7 +9,6 @@ class Person {
          * Calling other constructor
          */
         this(name);
-
         // this.name = name;    // tidak perlu lagi set name, karena sudah dilakukan dengan
                                 // memanggil constructor yang lain
         this.address = address;
