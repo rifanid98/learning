@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "tsc": "rm -rf build/ && tsc",
-    "ts": "rm -rf build/typescript02_oop/ && tsc -w",
-    "dev": "nodemon ./build/typescript02_oop/*$f*.js"
+    "ts": "rm -rf build/typescript03_oop/ && tsc -w",
+    "dev": "nodemon ./build/typescript03_oop/*$f*.js"
   },
   "devDependencies": {
     "typescript": "^4.0.5"

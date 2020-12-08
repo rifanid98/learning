@@ -17,7 +17,7 @@
         "**/vue**": true,
         // java
         "**/.idea": true,
-        "**/src": true,
+        ".src": true,
         "**/out": true,
     }
 }
