@@ -4,6 +4,7 @@ import morgan from 'morgan';
 import compression from 'compression';
 import helmet from 'helmet';
 import cors from 'cors';
+import { config as dotenv } from 'dotenv';
 
 // Routers
 import UserRoutes from './routes/UserRoutes';
@@ -15,6 +16,7 @@ class App {
         this.app = express();
         this.plugins();
         this.routes();
+        dotenv();
     }
 
     protected plugins() {
@@ -37,5 +39,5 @@ class App {
 const port: Number = 3230;
 const app = new App().app;
 app.listen(port, () => {
-    console.log(`Server is running at port ${port}`); 0
+    console.log(`Server is running at port ${port}`);
 });
