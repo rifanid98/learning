@@ -1,0 +1,34 @@
+const path = require('path');
+require("dotenv").config();
+
+if (process.env.NODE_ENV == 'development') {
+    module.exports = {
+        'config': path.resolve('src/utils/sequelize/config', 'database.js'),
+        'models-path': path.resolve('src/utils/sequelize/db', 'models'),
+        'seeders-path': path.resolve('src/utils/sequelize/db', 'seeders'),
+        'migrations-path': path.resolve('src/utils/sequelize/db', 'migrations')
+    };
+} else {
+    module.exports = {
+        'config': path.resolve('build/utils/sequelize/config', 'database.js'),
+        'models-path': path.resolve('build/utils/sequelize/db', 'models'),
+        'seeders-path': path.resolve('build/utils/sequelize/db', 'seeders'),
+        'migrations-path': path.resolve('build/utils/sequelize/db', 'migrations')
+    };
+}
+
+// if (process.env.NODE_ENV == 'development') {
+//     module.exports = {
+//         'config': path.resolve('src/config', 'database.js'),
+//         'models-path': path.resolve('src/db', 'models'),
+//         'seeders-path': path.resolve('src/db', 'seeders'),
+//         'migrations-path': path.resolve('src/db', 'migrations')
+//     };
+// } else {
+//     module.exports = {
+//         'config': path.resolve('build/config', 'database.js'),
+//         'models-path': path.resolve('build/db', 'models'),
+//         'seeders-path': path.resolve('build/db', 'seeders'),
+//         'migrations-path': path.resolve('build/db', 'migrations')
+//     };
+// }

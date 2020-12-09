@@ -8,6 +8,7 @@ import { config as dotenv } from 'dotenv';
 
 // Routers
 import UserRoutes from './routes/UserRoutes';
+import AuthRoutes from './routes/AuthRoutes';
 
 class App {
     public app: Application;
@@ -28,11 +29,12 @@ class App {
     }
 
     protected routes(): void {
-        this.app.route("/").get((req: Request, res: Response) => {
+        this.app.route("/api/v1").get((req: Request, res: Response) => {
             return res.send("ini adalah route menggunakan typescript");
         });
 
-        this.app.use("/users", UserRoutes);
+        this.app.use("/api/v1/auth", AuthRoutes);
+        this.app.use("/api/v1/users", UserRoutes);
     }
 }
 
