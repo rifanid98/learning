@@ -1,13 +1,9 @@
-import Joi from "joi";
+import Joi, { valid } from "joi";
 import { TObject } from "../constants/types";
 
 type MySchema = {
     [key: string]: any;
 }
-
-// type TObject = {
-//     [key: string]: any;
-// }
 
 /**
  * Custom Joi Error Handling
@@ -20,27 +16,18 @@ function joiError(error: TObject): string {
 }
 
 class FormValidation {
-    private schema: MySchema;
-    private fields: TObject;
-    private field: string[];
+    private _message: string = "";
 
     constructor(
-        schema: MySchema,
-        fields: TObject,
-        field: string[] = []
-    ) {
-        this.field = field;
-        this.fields = fields;
-        this.schema = schema;
-
-        if (field) this.dynamic();
-        this.static();
-    }
+        private schema: MySchema,
+        private fields: TObject,
+        private field: string[] = []
+    ) { }
 
     /** 
      * Use this code to validate full of fields you created
      * 
-     * const valid = await new FormValidation(loginSchema, body);
+     * const valid = await new MyFormValidation(loginSchema, body);
      * if (valid) // your code
      */
     static(): Promise<string | Boolean> {
@@ -62,18 +49,19 @@ class FormValidation {
      * const body = req.body;
      * const fieldToPatch = Object.keys(body);
      * 
-     * const valid = await new FormValidation(loginSchema, body, fieldToPatch);
+     * const valid = await new MyFormValidation(loginSchema, body, fieldToPatch);
      * if (valid) //your code
      */
     dynamic(): Promise<string | Boolean> {
-        const dynamicSchema = Object.keys(this.schema)
-            .filter(key => this.field.includes(key))
-            .reduce((obj: TObject, key: string): Object => {
-                obj[key] = this.schema[key];
-                return obj;
-            }, {});
-
         return new Promise((resolve, reject) => {
+            const dynamicSchema = Object.keys(this.schema)
+                .filter(key => this.field.includes(key))
+                .reduce((obj: TObject, key: string): Object => {
+                    obj[key] = this.schema[key];
+                    return obj;
+                }, {});
+            console.log(dynamicSchema, '<<< dynamicSchema')
+
             const validate = Joi.object(dynamicSchema).validate(this.fields);
 
             if (validate.error) {
@@ -83,6 +71,35 @@ class FormValidation {
             resolve(true);
         });
     }
+
+    /**
+     * Get Error Message
+     */
+    get message(): string {
+        return this._message;
+    }
 }
 
+// const FormValidation = (
+//     schema: MySchema,
+//     fields: TObject,
+//     field: string[] = []
+// ): Promise<string | Boolean> => {
+//     return new Promise((resolve, reject) => {
+//         let validation: MyFormValidation;
+
+//         if (field.length > 0) {
+//             validation = new MyFormValidation(schema, fields, field);
+//         } else {
+//             validation = new MyFormValidation(schema, fields);
+//         }
+
+//         const isValid = validation.getField() ? validation.dynamic() : validation.static();
+//         if (isValid) {
+//             resolve(true);
+//         } else {
+//             reject(validation.message);
+//         }
+//     })
+// }
 export default FormValidation;

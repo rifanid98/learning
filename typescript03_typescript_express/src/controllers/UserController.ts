@@ -1,10 +1,19 @@
 import { Request, Response } from 'express';
 import IController from './ControllerInterface';
+import FormValidation from '../utils/security/FormValidation';
+import { loginSchema } from '../utils/security/joiSchemes';
+import { TObject } from '../utils/constants/types';
 
 class UserController implements IController {
     create(req: Request, res: Response): Response {
-        const body: Object = req.body;
-        return res.send(body);
+        try {
+            const body: TObject = req.body;
+            // const isValid = new FormValidation(loginSchema, body);
+            // console.log(isValid, '<<< isValid');
+            return res.send(body);
+        } catch (error) {
+            return res.send("error")
+        }
     }
 
     showAll(req: Request, res: Response): Response {
