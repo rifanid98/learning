@@ -1,9 +1,18 @@
 import Joi from "joi";
+import { TObject } from "../constants/types";
+
+type MySchema = {
+    [key: string]: any;
+}
+
+// type TObject = {
+//     [key: string]: any;
+// }
 
 /**
  * Custom Joi Error Handling
  */
-function joiError(error: any): String {
+function joiError(error: TObject): string {
     const joiError = error.error.details[0];
     const errorMessage = joiError.message;
 
@@ -11,11 +20,15 @@ function joiError(error: any): String {
 }
 
 class FormValidation {
-    private schema: any;
-    private fields: Object;
-    private field: String[];
+    private schema: MySchema;
+    private fields: TObject;
+    private field: string[];
 
-    constructor(schema: any, fields: Object, field: String[] = []) {
+    constructor(
+        schema: MySchema,
+        fields: TObject,
+        field: string[] = []
+    ) {
         this.field = field;
         this.fields = fields;
         this.schema = schema;
@@ -30,7 +43,7 @@ class FormValidation {
      * const valid = await new FormValidation(loginSchema, body);
      * if (valid) // your code
      */
-    static(): Promise<String | Boolean> {
+    static(): Promise<string | Boolean> {
         return new Promise((resolve, reject) => {
             const validate = Joi.object(this.schema).validate(this.fields);
 
@@ -52,10 +65,10 @@ class FormValidation {
      * const valid = await new FormValidation(loginSchema, body, fieldToPatch);
      * if (valid) //your code
      */
-    dynamic(): Promise<String | Boolean> {
+    dynamic(): Promise<string | Boolean> {
         const dynamicSchema = Object.keys(this.schema)
             .filter(key => this.field.includes(key))
-            .reduce((obj, key) => {
+            .reduce((obj: TObject, key: string): Object => {
                 obj[key] = this.schema[key];
                 return obj;
             }, {});

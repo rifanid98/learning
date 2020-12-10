@@ -1,4 +1,5 @@
 import Joi from "joi";
+import { TObject } from "../constants/types";
 
 /**
  * Create your own joi schema here.
@@ -21,12 +22,14 @@ import Joi from "joi";
  * const valid = new FormValidation(loginSchema, body, fieldToPatch)    // dynamic validation
  * 
  */
-export const loginSchema = {
+
+
+export const loginSchema: TObject = {
     username: Joi.string().email({ minDomainSegments: 2 }).required(),
     password: Joi.string().trim().min(3).required()
 };
 
-export const registerSchema = {
+export const registerSchema: TObject = {
     username: Joi.string().email({ minDomainSegments: 2 }).required(),
     password: Joi.string().trim().min(3).required()
 };
