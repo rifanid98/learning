@@ -39,6 +39,34 @@ class MyResponse {
             error: this.message
         })
     }
+
+    public notfound() {
+        let payload: TObject = {
+            status: 404,
+            data: this.data
+        }
+
+        if (this.message) {
+            delete payload.data;
+            payload.message = this.message;
+        }
+
+        return this.res.status(404).send(payload);
+    }
+
+    public conflict() {
+        return this.res.status(409).send({
+            status: 409,
+            error: this.message
+        })
+    }
+
+    public notauthorized() {
+        return this.res.status(401).send({
+            status: 401,
+            error: this.message
+        })
+    }
 }
 
 export default MyResponse;

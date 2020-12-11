@@ -3,6 +3,9 @@ import IController from './ControllerInterface';
 import FormValidation from '../utils/security/FormValidation';
 import { loginSchema } from '../utils/security/joiSchemes';
 import { TObject } from '../utils/constants/types';
+const db = require('../utils/sequelize/db/models');
+import MyResponse from '../utils/response/MyResponse';
+import { type } from 'os';
 
 class UserController implements IController {
     create(req: Request, res: Response): Response {
@@ -20,8 +23,27 @@ class UserController implements IController {
         return res.send("show all");
     }
 
-    show(req: Request, res: Response): Response {
-        return res.send("show detail");
+    async show(req: Request, res: Response) {
+        try {
+            const params: TObject = req.params;
+            const { id } = params;
+
+            if (isNaN(parseInt(id))) {
+                return new MyResponse(res, null, 'invalid user id').badrequest();
+            }
+
+            const user = await db.user.findOne({ where: { id }, attributes: { exclude: ['password'] }, raw: true });
+
+            if (user) {
+                return new MyResponse(res, user).success();
+            } else {
+                return new MyResponse(res, null, 'user not found').notfound();
+            }
+
+        } catch (error) {
+            console.error(error, '<<< AuthController/login');
+            return new MyResponse(res, null).error();
+        }
     }
 
     update(req: Request, res: Response): Response {
