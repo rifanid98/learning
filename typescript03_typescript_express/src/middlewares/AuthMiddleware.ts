@@ -1,5 +1,4 @@
 import { Request, Response, NextFunction } from 'express';
-import jwt from 'jsonwebtoken';
 import MyResponse from '../utils/response/MyResponse';
 import { verifyToken } from '../utils/security/token';
 
@@ -14,8 +13,11 @@ export const checkAuth = async (req: Request, res: Response, next: NextFunction)
         const token = authorization.split(" ")?.pop()?.toString();
 
         if (token) {
-            await verifyToken(token);
-            next();
+            const verified = await verifyToken(token);
+            if (verified) {
+                req.app.locals.credentials = { user: verified };
+                next();
+            }
         } else {
             return new MyResponse(res, null, 'please send token').badrequest();
         }

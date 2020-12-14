@@ -60,7 +60,7 @@ class AuthController {
                     }
 
                     delete user.password;
-                    const token = generateToken({ ...user }, '1d');
+                    const token = generateToken({ ...user }, '5s');
                     return new MyResponse(res, { token }).success();
                 })
                 .catch(err => {

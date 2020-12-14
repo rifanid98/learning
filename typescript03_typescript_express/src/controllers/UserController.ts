@@ -26,6 +26,8 @@ class UserController implements IController {
     async show(req: Request, res: Response) {
         try {
             const params: TObject = req.params;
+            const userData = req.app.locals.credentials.user;
+            console.log(userData, '<<< userData');
             const { id } = params;
 
             if (isNaN(parseInt(id))) {
