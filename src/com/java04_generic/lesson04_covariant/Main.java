@@ -8,8 +8,14 @@ public class Main {
         MyData<? extends Object> myData = stringMyData; // boleh, karena covariant
     }
 
-    /** Covariant itu readonly, ketika sudah dibuat maka datanya menjadi
-     * covariant, tidak bisa diubah lagi dengan value yang lain */
+    /**
+     * Covariant itu readonly, ketika sudah dibuat maka datanya menjadi
+     * covariant, tidak bisa diubah lagi dengan value yang lain
+     *
+     * Covariant :
+     * - getData aman
+     * - setData tidak aman
+     * */
     public static void doIt(MyData<? extends Object> objectMyData) {
         System.out.println(objectMyData.getData());
 //        objectMyData.setData("Rifandi"); // error
