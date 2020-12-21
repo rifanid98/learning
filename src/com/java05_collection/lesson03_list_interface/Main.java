@@ -2,7 +2,6 @@ package com.java05_collection.lesson03_list_interface;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
