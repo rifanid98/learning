@@ -1,8 +1,5 @@
 package com.java06_lambda_expression.lesson01_membuat_lambda;
 
-import com.java06_lambda_expression.lesson01_membuat_lambda.lambda_interface.SimpleAction;
-import com.java06_lambda_expression.lesson01_membuat_lambda.lambda_interface.SimpleActionParam;
-
 public class Main {
     public static void main(String[] args) {
         /**
@@ -58,6 +55,7 @@ public class Main {
         SimpleActionParam lambdaOneLine2 = (String name) -> name;
         // cara 3
         SimpleActionParam lambdaOneLine3 = (name) -> name;
-
+        // cara 4
+        SimpleActionParam lambdaOneLine4 = name -> name;
     }
 }
