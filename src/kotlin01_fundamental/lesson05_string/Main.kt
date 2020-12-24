@@ -1,4 +1,4 @@
-package kotlin01_fundamental.lesson05_string_data_type
+package kotlin01_fundamental.lesson05_string
 
 fun main() {
     /**

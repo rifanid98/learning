@@ -1,4 +1,4 @@
-package kotlin01_fundamental.lesson04_boolean_data_type
+package kotlin01_fundamental.lesson04_boolean
 
 fun main() {
     /** Boolean */

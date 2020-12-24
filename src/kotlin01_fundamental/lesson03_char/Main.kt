@@ -1,4 +1,4 @@
-package kotlin01_fundamental.lesson03_char_data_type
+package kotlin01_fundamental.lesson03_char
 
 fun main() {
     /** Character */

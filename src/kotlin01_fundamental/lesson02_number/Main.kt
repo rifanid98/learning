@@ -1,4 +1,4 @@
-package kotlin01_fundamental.lesson02_number_data_type
+package kotlin01_fundamental.lesson02_number
 
 fun main() {
     /** Data Type in Kotlin */
