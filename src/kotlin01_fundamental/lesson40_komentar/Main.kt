@@ -1,0 +1,2 @@
+package kotlin01_fundamental.lesson40_komentar
+
