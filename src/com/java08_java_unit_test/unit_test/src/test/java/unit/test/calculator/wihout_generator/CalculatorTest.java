@@ -1,9 +1,10 @@
-package unit.test;
+package unit.test.calculator.wihout_generator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import unit.test.Calculator;
 
 @DisplayName("Test Calculator")
 public class CalculatorTest {
