@@ -1,4 +1,4 @@
-package unit.test.calculator.disabled_test;
+package unit.test.calculator.lesson03_disabled_test;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;

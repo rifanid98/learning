@@ -1,4 +1,4 @@
-package unit.test.calculator.with_generator;
+package unit.test.calculator.lesson02_with_generator;
 
 import org.junit.jupiter.api.DisplayNameGeneration;
 import org.junit.jupiter.api.Test;

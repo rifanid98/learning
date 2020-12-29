@@ -1,4 +1,4 @@
-package unit.test.calculator.wihout_generator;
+package unit.test.calculator.lesson01_wihout_generator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
