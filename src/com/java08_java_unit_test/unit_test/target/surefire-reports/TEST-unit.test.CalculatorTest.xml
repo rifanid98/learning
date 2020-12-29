@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="unit.test.CalculatorTest" time="0.069" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="unit.test.CalculatorTest" time="0.058" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-15.0.1/lib"/>
-    <property name="sun.java.command" value="/home/anonymous/Project/learning/src/com/java08_java_unit_test/unit_test/target/surefire/surefirebooter2500247801558886865.jar /home/anonymous/Project/learning/src/com/java08_java_unit_test/unit_test/target/surefire 2020-12-29T09-04-54_024-jvmRun1 surefire17873825271561710087tmp surefire_04899340588836154378tmp"/>
+    <property name="sun.java.command" value="/home/anonymous/Project/learning/src/com/java08_java_unit_test/unit_test/target/surefire/surefirebooter16325117331830079684.jar /home/anonymous/Project/learning/src/com/java08_java_unit_test/unit_test/target/surefire 2020-12-29T14-10-32_731-jvmRun1 surefire18160203842914498112tmp surefire_011330401795816791882tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/anonymous/Project/learning/src/com/java08_java_unit_test/unit_test/target/test-classes:/home/anonymous/Project/learning/src/com/java08_java_unit_test/unit_test/target/classes:/home/anonymous/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/home/anonymous/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/home/anonymous/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/anonymous/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/anonymous/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/home/anonymous/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/home/anonymous/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/home/anonymous/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/anonymous/Project/learning/src/com/java08_java_unit_test/unit_test/target/surefire/surefirebooter2500247801558886865.jar"/>
+    <property name="surefire.real.class.path" value="/home/anonymous/Project/learning/src/com/java08_java_unit_test/unit_test/target/surefire/surefirebooter16325117331830079684.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.1+9-18"/>
     <property name="user.name" value="anonymous"/>
@@ -50,5 +50,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="addTest" classname="unit.test.CalculatorTest" time="0.063"/>
+  <testcase name="divideTest" classname="unit.test.CalculatorTest" time="0.041"/>
+  <testcase name="divideTestError" classname="unit.test.CalculatorTest" time="0.004"/>
+  <testcase name="addTest" classname="unit.test.CalculatorTest" time="0.001"/>
 </testsuite>

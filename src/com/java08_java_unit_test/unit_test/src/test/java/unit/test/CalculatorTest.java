@@ -12,5 +12,18 @@ public class CalculatorTest {
         var result = calculator.add(10, 10);
         assertEquals(20, result);
     }
+
+    @Test
+    public void divideTest() {
+        Integer result = calculator.divide(10,10);
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void divideTestError() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.divide(10, 0);
+        });
+    }
 }
 
