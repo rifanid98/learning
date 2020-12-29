@@ -10,8 +10,9 @@ public class BeforeAfterEach {
 
     /**
      * @BeforeEach dan @AfterEach akan dieksekusi untuk setiap
-     * method. Jadi jika ada 10 method, maka akan dieksekusi
-     * 10 kali @BeforeEach dan @AfterEach
+     * @Test dijalankan. Jadi jika ada 10 method dengan @Test
+     * yang enable, maka akan dieksekusi 10 kali @BeforeEach dan
+     * @AfterEach
      */
     @BeforeEach
     public void setUp() {
