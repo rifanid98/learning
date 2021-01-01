@@ -1,0 +1,13 @@
+unit/test/calculator/lesson07_assumptions/Assumptions.class
+unit/test/calculator/lesson05_before_after_all/BeforeAfterAll.class
+unit/test/calculator/lesson03_disabled_test/DisabledTest.class
+unit/test/calculator/lesson04_before_after_each/BeforeAfterEach.class
+unit/test/calculator/lesson02_with_generator/CalculatorNameGenerator.class
+unit/test/calculator/lesson01_wihout_generator/CalculatorTest.class
+unit/test/calculator/lesson11_enabled_disabled_environment_variable/EnabledDisabledEnvironmentVariables.class
+unit/test/calculator/lesson02_with_generator/CalculatorTestWithNameGeneration.class
+unit/test/calculator/lesson08_enabled_disabled_on_os/EnabledDisabledOnOs.class
+unit/test/calculator/lesson09_enabled_disabled_on_jre/EnabledDisabledOnJre.class
+unit/test/calculator/lesson12_using_tags/UsingTags.class
+unit/test/calculator/lesson10_enabled_disabled_system_property/EnabledDisabledSystemProperty.class
+unit/test/calculator/lesson06_aborted_test/AbortedTest.class

@@ -19,17 +19,17 @@ import org.junit.jupiter.api.Test;
 
 /* command: mvn test -Dgroups=tag1,tag2,tagn */
 @Tags({
-    @Tag("lesson-using-tags")
+    @Tag("using-tags")
 })
 public class UsingTags {
 
     @Test
-    public void lessonUsingTags1() {
-        System.out.println("Using Tags 1");
+    public void tags1() {
+        //
     }
 
     @Test
-    public void lessonUsingTags2() {
-        System.out.println("Using Tags 2");
+    public void tags2() {
+        //
     }
 }
