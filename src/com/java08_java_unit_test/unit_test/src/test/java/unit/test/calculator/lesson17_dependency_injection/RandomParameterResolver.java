@@ -18,6 +18,6 @@ public class RandomParameterResolver implements ParameterResolver {
 
     @Override
     public Object resolveParameter(ParameterContext parameterContext, ExtensionContext extensionContext) throws ParameterResolutionException {
-        return null;
+        return random;
     }
 }
