@@ -6,7 +6,8 @@
     <!-- <Lesson04MethodsVue /> -->
     <!-- <Lesson05ComputedVue /> -->
     <!-- <Lesson06ComputedGetterSetterVue /> -->
-    <Lesson07WatchEffectVue />
+    <!-- <Lesson07WatchEffectVue /> -->
+    <Lesson08WatchVue />
   </div>
 </template>
 
@@ -17,7 +18,8 @@
 // import Lesson04MethodsVue from './components/Lesson04Methods.vue'
 // import Lesson05ComputedVue from './components/Lesson05Computed.vue'
 // import Lesson06ComputedGetterSetterVue from './components/Lesson06ComputedGetterSetter.vue'
-import Lesson07WatchEffectVue from './components/Lesson07WatchEffect.vue'
+// import Lesson07WatchEffectVue from './components/Lesson07WatchEffect.vue'
+import Lesson08WatchVue from './components/Lesson08Watch.vue'
 
 export default {
   setup() {
@@ -29,7 +31,8 @@ export default {
     // Lesson04MethodsVue,
     // Lesson05ComputedVue,
     // Lesson06ComputedGetterSetterVue,
-    Lesson07WatchEffectVue
+    // Lesson07WatchEffectVue,
+    Lesson08WatchVue
   }
 }
 </script>
