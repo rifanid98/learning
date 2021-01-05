@@ -18,6 +18,8 @@ export default {
             num2: 10
         }
     },
+    // Computed digunakan untuk mengeksekusi business logic
+    // dari suatu aplikasi secara reaktif atau real time.
     computed: {
         total() {
             return this.stringToNumber(this.num1) + this.stringToNumber(this.num2)

@@ -19,6 +19,10 @@ export default {
     mounted() {
         console.log(typeof this.value)
     },
+    // emits itu untuk memberikan event ke parent component,
+    // kemudian di parent component event tersebut diterima
+    // yang kemudian akan mengeksekusi kode yang ada di parent
+    // component
     emits: ['child-click', 'child-click-with-value'],
     methods: {
         childClick() {

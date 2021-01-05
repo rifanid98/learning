@@ -1,5 +1,7 @@
 <template>
     <div>
+        <!-- slot merupakan cara untuk menyisipkan component yang
+             berasal dari parent component ke child component -->
         <p>header</p>
         <!-- default slot -->
         <!-- <slot />  -->

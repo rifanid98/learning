@@ -17,6 +17,8 @@ import basic from './Mixins/basic';
 
 export default {
     name: 'E24Mixins',
+    // mixins berguna untuk meng-include kodingan logic vue dari
+    // file lain ke file ini (dimana mixins tersebut digunakan)
     mixins: [basic],
     data() {
         return {

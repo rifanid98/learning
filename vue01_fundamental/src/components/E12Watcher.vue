@@ -14,6 +14,8 @@ export default {
             message: ''
         }
     },
+    // watcher selalu mengawasi setiap perubahan yang terjadi
+    // pada data()
     watch: {
         message(value) {
             console.log(`message: ${value}`);

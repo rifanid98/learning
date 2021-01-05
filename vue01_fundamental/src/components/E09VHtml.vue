@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- v-html berguna untuk merender string html menjadi component html -->
         <h1>{{ tag }}</h1>
         <h1 v-html="tag"></h1>
     </div>

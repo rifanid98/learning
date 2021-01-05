@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- v-model adalah gabungan dari :value dan @input -->
         <h1>{{ message }}</h1>
         <input v-model="message" :placeholder="placeholder">
 

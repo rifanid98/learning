@@ -17,6 +17,9 @@ export default {
             message: 'message'
         }
     },
+    // provide inject itu mirip seperti state management, tapi
+    // untuk studi kasus yang tidak kompleks. 
+    // di react seperti reactContext.
     provide() {
         return {
             providedMessage: 'provided ' + this.message

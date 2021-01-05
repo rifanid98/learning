@@ -8,6 +8,9 @@
 <script>
 export default {
     name: 'E21PropTypes',
+    // prop types, tipe-tipe property, atau lebih jelasnya
+    // prop types adalah penentuan tipe data untuk masing-
+    // masing property
     props: {
         name: String,
         age: {

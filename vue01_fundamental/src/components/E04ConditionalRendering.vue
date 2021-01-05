@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- component akan dirender jika memenuhi kondisi tertentu -->
         <h1 v-if="state">Hidup</h1>
         <h1 v-else-if="state === false">Mati</h1>
         <h1 v-else>Error</h1>
