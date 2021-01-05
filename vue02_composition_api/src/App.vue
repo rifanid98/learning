@@ -1,8 +1,9 @@
 <template>
-  <h1>{{ message }}</h1>
+  <Lesson01RefVue />
 </template>
 
 <script>
+import Lesson01RefVue from './components/Lesson01Ref.vue';
 
 export default {
   setup() {
@@ -11,6 +12,9 @@ export default {
     return {
       message
     }
+  },
+  components: {
+    Lesson01RefVue
   }
 }
 </script>
