@@ -1,7 +1,7 @@
-package unit.test.service;
+package unit.test.lesson24.service;
 
-import unit.test.data.Person;
-import unit.test.repository.PersonRepository;
+import unit.test.lesson24.data.Person;
+import unit.test.lesson24.repository.PersonRepository;
 
 public class PersonService {
 

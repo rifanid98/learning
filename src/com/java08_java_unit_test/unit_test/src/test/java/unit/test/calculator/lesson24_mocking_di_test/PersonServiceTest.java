@@ -8,9 +8,9 @@ import org.junit.jupiter.api.extension.Extensions;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import unit.test.data.Person;
-import unit.test.repository.PersonRepository;
-import unit.test.service.PersonService;
+import unit.test.lesson24.data.Person;
+import unit.test.lesson24.repository.PersonRepository;
+import unit.test.lesson24.service.PersonService;
 
 @Extensions({
     @ExtendWith(MockitoExtension.class)

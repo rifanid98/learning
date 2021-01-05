@@ -1,4 +1,4 @@
-package unit.test.data;
+package unit.test.lesson24.data;
 
 public class Person {
     private String id;
