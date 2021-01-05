@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    name: 'E02Vmodel',
+    name: 'E02Methods',
     data() {
         return {
             count: 0,
