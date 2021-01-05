@@ -7,6 +7,10 @@ import {ref} from "vue";
 
 export default {
   setup() {
+    /**
+     * Ref digunakan untuk mengubah nilai suatu variable
+     * contohnya seperti variable di bawah ini :
+     */
     const message = ref("Hello World");
     
     setTimeout(() => {
