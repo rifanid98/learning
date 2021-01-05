@@ -29,6 +29,14 @@ export default {
     }
 
     const one = 1;
+    /**
+     * Computed
+     * 
+     * Computed akan mengeksekusi kode kemudian
+     * mengembalikan nilainya. 
+     * Computed akan dijalankan setiap kali state 
+     * atau data berubah.
+     */
     const result = computed(() => {
       return (counter1.value+one) + (counter2.nilai+one);
     })
