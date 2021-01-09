@@ -31,6 +31,10 @@ class Person (
     init {
         println("Constructor executed!")
     }
+
+    var firstName: String = firstName
+    var middleName: String? = middleName
+    var lastName: String = lastName
 }
 
 fun main() {
