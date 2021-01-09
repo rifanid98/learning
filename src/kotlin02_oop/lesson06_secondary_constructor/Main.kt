@@ -12,7 +12,7 @@ package kotlin02_oop.lesson06_secondary_constructor
  * Intermezzo
  *
  * - Secondary Constructor di Kotlin bisa kita sebut sebagai
- *   constructor overriding seperti di Java.
+ *   constructor overloading seperti di Java.
  */
 /* Cara 1 */
 class Person (
@@ -22,7 +22,7 @@ class Person (
     lastName: String = ""
 ) {
     /**
-     * Constructor Overriding
+     * Constructor Overloading
      */
     constructor(firstName: String, lastName: String):
     this(firstName, null, lastName) {
@@ -52,7 +52,7 @@ class Hooman {
     }
 
     /**
-     * Constructor Overriding
+     * Constructor Overloading
      *
      * Kita masih bisa menjadikan Secondary Constructor lainnya
      * menjadi seperti layaknya Primary Constructor. Yaitu memanggilnya
