@@ -12,8 +12,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -26,6 +26,7 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -57,7 +58,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="kotlin02_oop.lesson08_function.MainKt" />
+      <option name="MAIN_CLASS_NAME" value="kotlin02_oop.lesson12_function_overriding.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,5 +95,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1320" height="179" key="GridCell.Tab.0.bottom" timestamp="1610288955074">
+      <screen x="0" y="17" width="1366" height="751" />
+    </state>
+    <state width="1320" height="179" key="GridCell.Tab.0.bottom/0.17.1366.751@0.17.1366.751" timestamp="1610288955074" />
+    <state width="1320" height="179" key="GridCell.Tab.0.center" timestamp="1610288955073">
+      <screen x="0" y="17" width="1366" height="751" />
+    </state>
+    <state width="1320" height="179" key="GridCell.Tab.0.center/0.17.1366.751@0.17.1366.751" timestamp="1610288955073" />
+    <state width="1320" height="179" key="GridCell.Tab.0.left" timestamp="1610288955073">
+      <screen x="0" y="17" width="1366" height="751" />
+    </state>
+    <state width="1320" height="179" key="GridCell.Tab.0.left/0.17.1366.751@0.17.1366.751" timestamp="1610288955073" />
+    <state width="1320" height="179" key="GridCell.Tab.0.right" timestamp="1610288955073">
+      <screen x="0" y="17" width="1366" height="751" />
+    </state>
+    <state width="1320" height="179" key="GridCell.Tab.0.right/0.17.1366.751@0.17.1366.751" timestamp="1610288955073" />
   </component>
 </project>
