@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c335b01d-b981-4122-bf21-4c44ed55b9b4" name="Default Changelist" comment="" />
+    <list default="true" id="c335b01d-b981-4122-bf21-4c44ed55b9b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="package-info" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -56,7 +80,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="kotlin02_oop.lesson17_type_check_casts.MainKt" />
+      <option name="MAIN_CLASS_NAME" value="kotlin02_oop.lesson20_hashcode_function.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,21 +120,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="602" height="464" key="GridCell.Tab.0.bottom" timestamp="1610376778094">
+    <state width="405" height="420" key="GridCell.Tab.0.bottom" timestamp="1610461447824">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="602" height="464" key="GridCell.Tab.0.bottom/0.17.1366.751@0.17.1366.751" timestamp="1610376778094" />
-    <state width="602" height="464" key="GridCell.Tab.0.center" timestamp="1610376778093">
+    <state width="405" height="420" key="GridCell.Tab.0.bottom/0.17.1366.751@0.17.1366.751" timestamp="1610461447824" />
+    <state width="405" height="420" key="GridCell.Tab.0.center" timestamp="1610461447822">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="602" height="464" key="GridCell.Tab.0.center/0.17.1366.751@0.17.1366.751" timestamp="1610376778093" />
-    <state width="602" height="464" key="GridCell.Tab.0.left" timestamp="1610376778092">
+    <state width="405" height="420" key="GridCell.Tab.0.center/0.17.1366.751@0.17.1366.751" timestamp="1610461447822" />
+    <state width="405" height="420" key="GridCell.Tab.0.left" timestamp="1610461447822">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="602" height="464" key="GridCell.Tab.0.left/0.17.1366.751@0.17.1366.751" timestamp="1610376778092" />
-    <state width="602" height="464" key="GridCell.Tab.0.right" timestamp="1610376778093">
+    <state width="405" height="420" key="GridCell.Tab.0.left/0.17.1366.751@0.17.1366.751" timestamp="1610461447822" />
+    <state width="405" height="420" key="GridCell.Tab.0.right" timestamp="1610461447823">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="602" height="464" key="GridCell.Tab.0.right/0.17.1366.751@0.17.1366.751" timestamp="1610376778093" />
+    <state width="405" height="420" key="GridCell.Tab.0.right/0.17.1366.751@0.17.1366.751" timestamp="1610461447823" />
+    <state x="4" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1610461468474">
+      <screen x="0" y="17" width="1366" height="751" />
+    </state>
+    <state x="4" y="89" width="672" height="678" key="search.everywhere.popup/0.17.1366.751@0.17.1366.751" timestamp="1610461468474" />
   </component>
 </project>
