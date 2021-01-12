@@ -58,6 +58,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="Application.MainKt">
     <configuration name="HelloWorldKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
@@ -80,7 +81,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="kotlin02_oop.lesson22_abstract_properties_function.MainKt" />
+      <option name="MAIN_CLASS_NAME" value="kotlin02_oop.lesson23_getter_setter.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,22 +125,26 @@
       <screen x="0" y="17" width="1366" height="751" />
     </state>
     <state x="138" y="111" width="400" height="562" key="#com.intellij.ide.util.MemberChooser/0.17.1366.751@0.17.1366.751" timestamp="1610462595596" />
-    <state width="405" height="414" key="GridCell.Tab.0.bottom" timestamp="1610462678659">
+    <state width="405" height="599" key="GridCell.Tab.0.bottom" timestamp="1610463953368">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="405" height="414" key="GridCell.Tab.0.bottom/0.17.1366.751@0.17.1366.751" timestamp="1610462678659" />
-    <state width="405" height="414" key="GridCell.Tab.0.center" timestamp="1610462678658">
+    <state width="405" height="599" key="GridCell.Tab.0.bottom/0.17.1366.751@0.17.1366.751" timestamp="1610463953368" />
+    <state width="405" height="599" key="GridCell.Tab.0.center" timestamp="1610463953367">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="405" height="414" key="GridCell.Tab.0.center/0.17.1366.751@0.17.1366.751" timestamp="1610462678658" />
-    <state width="405" height="414" key="GridCell.Tab.0.left" timestamp="1610462678657">
+    <state width="405" height="599" key="GridCell.Tab.0.center/0.17.1366.751@0.17.1366.751" timestamp="1610463953367" />
+    <state width="405" height="599" key="GridCell.Tab.0.left" timestamp="1610463953366">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="405" height="414" key="GridCell.Tab.0.left/0.17.1366.751@0.17.1366.751" timestamp="1610462678657" />
-    <state width="405" height="414" key="GridCell.Tab.0.right" timestamp="1610462678659">
+    <state width="405" height="599" key="GridCell.Tab.0.left/0.17.1366.751@0.17.1366.751" timestamp="1610463953366" />
+    <state width="405" height="599" key="GridCell.Tab.0.right" timestamp="1610463953367">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="405" height="414" key="GridCell.Tab.0.right/0.17.1366.751@0.17.1366.751" timestamp="1610462678659" />
+    <state width="405" height="599" key="GridCell.Tab.0.right/0.17.1366.751@0.17.1366.751" timestamp="1610463953367" />
+    <state x="189" y="38" key="SettingsEditor" timestamp="1610463184202">
+      <screen x="0" y="17" width="1366" height="751" />
+    </state>
+    <state x="189" y="38" key="SettingsEditor/0.17.1366.751@0.17.1366.751" timestamp="1610463184202" />
     <state x="4" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1610461468474">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
