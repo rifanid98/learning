@@ -69,7 +69,7 @@ fun runCopyDataClass() {
     println("\n")
 
     /* copy class with parameter */
-    println("----- copy class")
+    println("----- copy class with parameter")
     val product3: Product1 = product1.copy(name = "Supermie")
     println(product3)
     println(product3.hashCode())
