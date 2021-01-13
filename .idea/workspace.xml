@@ -24,6 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c335b01d-b981-4122-bf21-4c44ed55b9b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kotlin02_oop/lesson17_type_check_casts/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin02_oop/lesson17_type_check_casts/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="kotlin02_oop.lesson23_getter_setter.MainKt" />
+      <option name="MAIN_CLASS_NAME" value="kotlin02_oop.lesson25_interface.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,33 +122,37 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="138" y="111" width="400" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1610462595596">
+    <state x="138" y="111" width="400" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1610507087637">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state x="138" y="111" width="400" height="562" key="#com.intellij.ide.util.MemberChooser/0.17.1366.751@0.17.1366.751" timestamp="1610462595596" />
-    <state width="405" height="599" key="GridCell.Tab.0.bottom" timestamp="1610463953368">
+    <state x="138" y="111" width="400" height="562" key="#com.intellij.ide.util.MemberChooser/0.17.1366.751@0.17.1366.751" timestamp="1610507087637" />
+    <state width="572" height="407" key="GridCell.Tab.0.bottom" timestamp="1610507367751">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="405" height="599" key="GridCell.Tab.0.bottom/0.17.1366.751@0.17.1366.751" timestamp="1610463953368" />
-    <state width="405" height="599" key="GridCell.Tab.0.center" timestamp="1610463953367">
+    <state width="572" height="407" key="GridCell.Tab.0.bottom/0.17.1366.751@0.17.1366.751" timestamp="1610507367751" />
+    <state width="572" height="407" key="GridCell.Tab.0.center" timestamp="1610507367749">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="405" height="599" key="GridCell.Tab.0.center/0.17.1366.751@0.17.1366.751" timestamp="1610463953367" />
-    <state width="405" height="599" key="GridCell.Tab.0.left" timestamp="1610463953366">
+    <state width="572" height="407" key="GridCell.Tab.0.center/0.17.1366.751@0.17.1366.751" timestamp="1610507367749" />
+    <state width="572" height="407" key="GridCell.Tab.0.left" timestamp="1610507367749">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="405" height="599" key="GridCell.Tab.0.left/0.17.1366.751@0.17.1366.751" timestamp="1610463953366" />
-    <state width="405" height="599" key="GridCell.Tab.0.right" timestamp="1610463953367">
+    <state width="572" height="407" key="GridCell.Tab.0.left/0.17.1366.751@0.17.1366.751" timestamp="1610507367749" />
+    <state width="572" height="407" key="GridCell.Tab.0.right" timestamp="1610507367750">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="405" height="599" key="GridCell.Tab.0.right/0.17.1366.751@0.17.1366.751" timestamp="1610463953367" />
+    <state width="572" height="407" key="GridCell.Tab.0.right/0.17.1366.751@0.17.1366.751" timestamp="1610507367750" />
     <state x="189" y="38" key="SettingsEditor" timestamp="1610463184202">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
     <state x="189" y="38" key="SettingsEditor/0.17.1366.751@0.17.1366.751" timestamp="1610463184202" />
-    <state x="4" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1610461468474">
+    <state x="0" y="84" width="766" height="616" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610504728655">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state x="4" y="89" width="672" height="678" key="search.everywhere.popup/0.17.1366.751@0.17.1366.751" timestamp="1610461468474" />
+    <state x="0" y="84" width="766" height="616" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.17.1366.751@0.17.1366.751" timestamp="1610504728655" />
+    <state x="4" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1610507206830">
+      <screen x="0" y="17" width="1366" height="751" />
+    </state>
+    <state x="4" y="89" width="672" height="678" key="search.everywhere.popup/0.17.1366.751@0.17.1366.751" timestamp="1610507206830" />
   </component>
 </project>
