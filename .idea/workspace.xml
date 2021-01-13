@@ -23,7 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c335b01d-b981-4122-bf21-4c44ed55b9b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/kotlin02_oop/lesson29_data_class/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin02_oop/lesson29_data_class/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="kotlin02_oop.lesson29_data_class.MainKt" />
+      <option name="MAIN_CLASS_NAME" value="kotlin02_oop.lesson30_sealed_class.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,22 +125,22 @@
       <screen x="0" y="17" width="1366" height="751" />
     </state>
     <state x="138" y="111" width="400" height="562" key="#com.intellij.ide.util.MemberChooser/0.17.1366.751@0.17.1366.751" timestamp="1610507087637" />
-    <state width="572" height="408" key="GridCell.Tab.0.bottom" timestamp="1610514484013">
+    <state width="572" height="395" key="GridCell.Tab.0.bottom" timestamp="1610518278155">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="572" height="408" key="GridCell.Tab.0.bottom/0.17.1366.751@0.17.1366.751" timestamp="1610514484013" />
-    <state width="572" height="408" key="GridCell.Tab.0.center" timestamp="1610514484012">
+    <state width="572" height="395" key="GridCell.Tab.0.bottom/0.17.1366.751@0.17.1366.751" timestamp="1610518278155" />
+    <state width="572" height="395" key="GridCell.Tab.0.center" timestamp="1610518278154">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="572" height="408" key="GridCell.Tab.0.center/0.17.1366.751@0.17.1366.751" timestamp="1610514484012" />
-    <state width="572" height="408" key="GridCell.Tab.0.left" timestamp="1610514484011">
+    <state width="572" height="395" key="GridCell.Tab.0.center/0.17.1366.751@0.17.1366.751" timestamp="1610518278154" />
+    <state width="572" height="395" key="GridCell.Tab.0.left" timestamp="1610518278154">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="572" height="408" key="GridCell.Tab.0.left/0.17.1366.751@0.17.1366.751" timestamp="1610514484011" />
-    <state width="572" height="408" key="GridCell.Tab.0.right" timestamp="1610514484013">
+    <state width="572" height="395" key="GridCell.Tab.0.left/0.17.1366.751@0.17.1366.751" timestamp="1610518278154" />
+    <state width="572" height="395" key="GridCell.Tab.0.right" timestamp="1610518278154">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
-    <state width="572" height="408" key="GridCell.Tab.0.right/0.17.1366.751@0.17.1366.751" timestamp="1610514484013" />
+    <state width="572" height="395" key="GridCell.Tab.0.right/0.17.1366.751@0.17.1366.751" timestamp="1610518278154" />
     <state x="189" y="38" key="SettingsEditor" timestamp="1610463184202">
       <screen x="0" y="17" width="1366" height="751" />
     </state>
