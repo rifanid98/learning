@@ -37,6 +37,23 @@ fun runDelegationManual() {
 /* Delegation By Kotlin */
 class MyBaseDelegateAuto(val base: Base): Base by base
 
+/**
+ * Override Delegation
+ *
+ * - Dalam delegation, properties dan function secara otomatis akan
+ *   didelegasikan ke object yang dipilih.
+ * - Namun kita tetap bisa meng-override properties dan function jika
+ *   kita mau.
+ */
+class MyBaseDelegateAuto2(val base: Base): Base by base {
+    // delegasi manual method sayHello
+    override fun sayHello(name: String) {
+        // code
+    }
+
+    // sisanya di delegasi auto oleh kotlin
+}
+
 fun runDelegationAuto() {
     val myBase: MyBase = MyBase()
     val delegate: MyBaseDelegateAuto = MyBaseDelegateAuto(myBase)
