@@ -1,13 +1,13 @@
 package kotlin02_oop.lesson17_type_check_casts
 
 fun divider(title: String, tab: Int = 0) {
+    println("\n")
     println("#############################################################")
     for (i in 0..tab) {
         print("\t")
     }
     print("$title\n")
     println("#############################################################")
-    println("\n")
 }
 
 //###############################################################
