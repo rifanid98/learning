@@ -41,7 +41,7 @@ annotation class Fancy(val author: String)
 @Fancy(author = "Adnin")
 class MyApplication(val name: String, val version: Int) {
     fun info(): String = "Application $name-$version"
-}
+} 
 
 fun main() {
     val application: MyApplication = MyApplication("android", 1)
