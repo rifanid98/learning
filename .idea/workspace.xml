@@ -23,7 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c335b01d-b981-4122-bf21-4c44ed55b9b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/kotlin03_generic/lesson04_invariant/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin03_generic/lesson04_invariant/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
