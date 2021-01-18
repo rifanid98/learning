@@ -14,6 +14,7 @@ package kotlin03_generic.lesson04_invariant
 class Invariant<T>(val data: T)
 
 fun main() {
-    val data1: Invariant<String> = Invariant("Adnin")
-    //val data2: Invariant<Any> = data1 // ERROR. Invariant
+    val invariantString: Invariant<String> = Invariant("Adnin")
+    //val invariantInt: Invariant<Any> = invariantString // ERROR. Invariant
+    //invariantInt.data = 100 // ERROR.
 }
