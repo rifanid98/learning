@@ -35,6 +35,7 @@
       <list>
         <option value="Class" />
         <option value="package-info" />
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -86,7 +87,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="kotlin04_collection.lesson03_set.MainKt" />
+      <option name="MAIN_CLASS_NAME" value="kotlin04_collection.lesson04_pair.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
