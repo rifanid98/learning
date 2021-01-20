@@ -18,4 +18,7 @@ package kotlin04_collection.lesson01_pengenalan
  *      1. Immutable, collection yang hanya mendukung operasi read only.
  *      2. Mutable, collection turunan immutable, namun mendukung operasi
  *         write juga (add, edit, dan remove).
+ *
+ * Note:
+ *   Secaara default, collection di kotlin adalah immutable.
  */
