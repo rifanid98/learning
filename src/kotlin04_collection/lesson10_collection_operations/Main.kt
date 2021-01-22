@@ -31,6 +31,6 @@ package kotlin04_collection.lesson10_collection_operations
 fun main() {
     listOf<String>("Adnin", "Rifandi").forEach { value -> println(value) }
     listOf<String>("Adnin", "Rifandi").forEachIndexed { index, item ->
-        println("$index = $item")a
+        println("$index = $item")
     }
 }
