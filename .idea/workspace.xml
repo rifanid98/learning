@@ -95,7 +95,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="kotlin04_collection.lesson14_flattening.MainKt" />
+      <option name="MAIN_CLASS_NAME" value="kotlin04_collection.lesson15_string_representation.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,7 +107,7 @@
         <item itemvalue="Application.MainKt" />
         <item itemvalue="Application.MainKt" />
         <item itemvalue="Application.MainKt" />
-        <item itemvalue="Application.HelloWorldKt" />
+        <item itemvalue="Application.MainKt" />
       </list>
     </recent_temporary>
   </component>
