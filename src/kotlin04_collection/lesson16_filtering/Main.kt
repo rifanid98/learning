@@ -1,7 +1,7 @@
 package kotlin04_collection.lesson16_filtering
 
 /**
- * Filtering by predicate
+ * Filtering: Filtering by apredicate
  *
  * - Filtering adalah salah satu operasi collection yang sangat popular.
  * - Di kotlin, filtering bisa menggunakan predicate berupa lambda yang berisi
