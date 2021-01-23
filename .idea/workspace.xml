@@ -22,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c335b01d-b981-4122-bf21-4c44ed55b9b4" name="Default Changelist" comment="" />
+    <list default="true" id="c335b01d-b981-4122-bf21-4c44ed55b9b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +63,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/kotlin04_collection/lesson01_pengenalan" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/kotlin04_collection/lesson26_retrieve_by_condition" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -69,6 +71,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/kotlin04_collection/lesson26_retrieve_by_condition" />
       <recent name="$PROJECT_DIR$/src/kotlin04_collection/lesson01_pengenalan" />
     </key>
   </component>
@@ -93,7 +96,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="kotlin04_collection.lesson25_retrieve.MainKt" />
+      <option name="MAIN_CLASS_NAME" value="kotlin04_collection.lesson26_retrieve_by_condition.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
