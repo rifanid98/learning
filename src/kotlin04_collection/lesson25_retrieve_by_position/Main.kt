@@ -1,4 +1,4 @@
-package kotlin04_collection.lesson25_retrieve
+package kotlin04_collection.lesson25_retrieve_by_position
 
 /**
  * Retrieve by Position
