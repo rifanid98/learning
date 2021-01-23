@@ -13,25 +13,26 @@ import kotlin04_collection.lesson05_map.runMap
  *   collection aslinya.
  */
 /*
- ---------------------------------------------------------------------------
- |          Mapping Operations             |          Keterangan           |
- ---------------------------------------------------------------------------
- | map(transform: (T) -> R)                | Mengubah collection menjadi   |
- |                                         | collection baru sesuai lambda |
- |                                         | transformnya.                 |
- |-------------------------------------------------------------------------|
- | mapIndexed(transformL (index, T) -> R)  | Mengubah collection mejadi    |
- |                                         | collection baru, dengan tamba-|
- |                                         | han parameter index.          |
- |-------------------------------------------------------------------------|
- | mapNotNull(transform: (T) -> R)         | Sama seperti map(), namun meng|
- |                                         | hiraukan hasil null.          |
- |-------------------------------------------------------------------------|
- | mapIndexedNotNull(transform: (index, T) | Sama seperti mapIndexed(), na-|
- | -> R)                                   | mun menghiraukan nilai null.  |
- ---------------------------------------------------------------------------
+    Mapping Operations 1
+    ---------------------------------------------------------------------------
+    |          Mapping Operations             |          Keterangan           |
+    ---------------------------------------------------------------------------
+    | map(transform: (T) -> R)                | Mengubah collection menjadi   |
+    |                                         | collection baru sesuai lambda |
+    |                                         | transformnya.                 |
+    |-------------------------------------------------------------------------|
+    | mapIndexed(transformL (index, T) -> R)  | Mengubah collection mejadi    |
+    |                                         | collection baru, dengan tamba-|
+    |                                         | han parameter index.          |
+    |-------------------------------------------------------------------------|
+    | mapNotNull(transform: (T) -> R)         | Sama seperti map(), namun meng|
+    |                                         | hiraukan hasil null.          |
+    |-------------------------------------------------------------------------|
+    | mapIndexedNotNull(transform: (index, T) | Sama seperti mapIndexed(), na-|
+    | -> R)                                   | mun menghiraukan nilai null.  |
+    ---------------------------------------------------------------------------
  */
-fun runMapping() {
+fun runMappingOperations1() {
     /**
      * Manual
      */
@@ -72,23 +73,21 @@ fun runMapping() {
     println(list6.toString())
 }
 
-/**
- * Mapping Operations untuk Map
- */
 /*
- ---------------------------------------------------------------------------
- |          Mapping Operations             |          Keterangan           |
- ---------------------------------------------------------------------------
- | mapKeys(transform: (Entry<K, V>) -> R)  | Mengubah map menjadi map baru |
- |                                         | dengan nilai key baru sesuai  |
- |                                         | dengan lambda transformnya.   |
- |-------------------------------------------------------------------------|
- | mapValues(transform: (Entry<K,V>) -> R) | Mengubah map menjadi map baru |
- |                                         | dengan nilai value baru sesuai|
- |                                         | dengan lambda transformnya.   |
- ---------------------------------------------------------------------------
+    Mapping Operations 2
+    ---------------------------------------------------------------------------
+    |          Mapping Operations             |          Keterangan           |
+    ---------------------------------------------------------------------------
+    | mapKeys(transform: (Entry<K, V>) -> R)  | Mengubah map menjadi map baru |
+    |                                         | dengan nilai key baru sesuai  |
+    |                                         | dengan lambda transformnya.   |
+    |-------------------------------------------------------------------------|
+    | mapValues(transform: (Entry<K,V>) -> R) | Mengubah map menjadi map baru |
+    |                                         | dengan nilai value baru sesuai|
+    |                                         | dengan lambda transformnya.   |
+    ---------------------------------------------------------------------------
  */
-fun runMapMappingOperations() {
+fun runMappingOperations2() {
     val map1: Map<Int, String> = mapOf(
         1 to "Adnin",
         2 to "Rifandi",
@@ -102,9 +101,9 @@ fun runMapMappingOperations() {
 }
 
 fun main() {
-    divider("Mapping", 6)
-    runMapping()
+    divider("Mapping Operations 1", 4)
+    runMappingOperations1()
 
-    divider("Map Mapping Operations", 4)
-    runMapMappingOperations()
+    divider("Mapping Operations 2", 4)
+    runMappingOperations2()
 }
