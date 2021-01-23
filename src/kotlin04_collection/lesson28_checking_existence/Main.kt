@@ -7,9 +7,9 @@ package kotlin04_collection.lesson28_checking_existence
  *   data yang kita cari.
  */
 /*
-    Retrieve Operators
+    Checking Existence Operators
     -------------------------------------------------------------------------------
-    |           Retrieve Operators        |                Keterangan             |
+    |     Checking Existence Operators    |                Keterangan             |
     -------------------------------------------------------------------------------
     | contains(element): Boolean          | Mengecek apakah terdapat element di   |
     |                                     | collection                            |
