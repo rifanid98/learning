@@ -14,7 +14,7 @@ package kotlin04_collection.lesson10_collection_operations
  * - Oleh karena itu, collection operations di Kotlin sangat aman ketika
  *   dilakukan karena tidak akan mengubah collection aslinya.
  */
-
+const val collectionOperations = ""
 /**
  * Jenis Operations
  *
