@@ -67,7 +67,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -95,7 +95,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="kotlin04_collection.lesson19_plus_minus_operator.MainKt" />
+      <option name="MAIN_CLASS_NAME" value="kotlin04_collection.lesson20_grouping.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,10 +104,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainKt" />
-        <item itemvalue="Application.MainKt" />
-        <item itemvalue="Application.MainKt" />
-        <item itemvalue="Application.MainKt" />
-        <item itemvalue="Application.MainKt" />
+        <item itemvalue="Application.HelloWorldKt" />
       </list>
     </recent_temporary>
   </component>
