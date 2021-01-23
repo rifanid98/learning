@@ -1,7 +1,6 @@
 package kotlin04_collection.lesson11_mapping
 
 import kotlin04_collection.lesson01_pengenalan.divider
-import kotlin04_collection.lesson05_map.runMap
 
 /**
  * Transformations: Mapping

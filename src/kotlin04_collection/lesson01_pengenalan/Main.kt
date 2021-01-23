@@ -10,6 +10,7 @@ package kotlin04_collection.lesson01_pengenalan
  * - Kotlin standard library menyediakan data Collection yang sudah bisa
  *   langsung kita gunakan, tanpa tambahan library.
  */
+fun pengenalanCollection(): Boolean = true
 
 /**
  * Tipe Collection
@@ -22,3 +23,4 @@ package kotlin04_collection.lesson01_pengenalan
  * Note:
  *   Secaara default, collection di kotlin adalah immutable.
  */
+fun collection(): Boolean = true
