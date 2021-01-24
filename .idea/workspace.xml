@@ -96,7 +96,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="kotlin04_collection.lesson33_aggregate.MainKt" />
+      <option name="MAIN_CLASS_NAME" value="kotlin04_collection.lesson34_fold_reduce.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
