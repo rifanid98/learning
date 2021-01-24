@@ -2,6 +2,6 @@
 
 - Kotlin Generic
 - Kotlin Collection
-- Kotlin Gradle
+- Gradle
 - Kotlin Unit Test
 - Kotlin Coroutine
