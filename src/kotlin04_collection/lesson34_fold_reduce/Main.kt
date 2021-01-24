@@ -36,12 +36,23 @@ package kotlin04_collection.lesson34_fold_reduce
 */
 fun main() {
     val numbers: List<Int> = (1..100).toList()
-    val max: Int = numbers.reduce { curent, next ->
-        if (curent < next) next
-        else  curent
+    val max: Int = numbers.reduce { current, next ->
+        if (current < next) next
+        else  current
     }
-    val sum: Int = numbers.fold(0) { current, next -> current + next }
+    val min: Int = numbers.reduce { current, next ->
+        if (current < next ) current
+        else  next
+    }
+    val sum: Int = numbers.fold(0) { current, next ->
+        current + next
+    }
+    val count: Int = numbers.fold(0) { current, next ->
+        current + 1
+    }
 
     println(max)
+    println(min)
     println(sum)
+    println(count)
 }
