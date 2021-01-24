@@ -63,7 +63,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/kotlin04_collection/lesson26_retrieve_by_condition" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/kotlin03_generic/lesson16_materi_selanjutnya" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -71,6 +71,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/kotlin03_generic/lesson16_materi_selanjutnya" />
+      <recent name="$PROJECT_DIR$/src/kotlin02_oop/lesson50_materi_selanjutnya" />
       <recent name="$PROJECT_DIR$/src/kotlin04_collection/lesson26_retrieve_by_condition" />
       <recent name="$PROJECT_DIR$/src/kotlin04_collection/lesson01_pengenalan" />
     </key>
