@@ -10,6 +10,16 @@ class App {
         }
 }
 
+class Hello() {
+    companion object {
+        val greeting: String
+        get() {
+            return "Hello"
+        }
+    }
+}
+
 fun main() {
     println(App().greeting)
+    println(Hello.greeting)
 }

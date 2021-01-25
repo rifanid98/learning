@@ -40,3 +40,12 @@ application {
     // Define the main class for the application.
     mainClass.set("kotlin05_gradle.AppKt")
 }
+
+/**
+ * Custom Tasks
+ */
+tasks.register("hello") {
+    doFirst {
+        println("Hello")
+    }
+}
