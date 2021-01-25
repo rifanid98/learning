@@ -17,6 +17,13 @@ plugins {
 repositories {
     // Use JCenter for resolving dependencies.
     jcenter()
+    mavenCentral()
+    /* dibutuhkan ketika membuat android app */
+    //google()
+    /* private repository*/
+    //maven {
+    //    url = uri("https://dl.bintray.com/bliblidotcom/maven")
+    //}
 }
 
 dependencies {
@@ -34,6 +41,10 @@ dependencies {
 
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+
+    // menambahkan dependency
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
+    implementation("com.google.code.gson:gson:2.8.6")
 }
 
 application {
