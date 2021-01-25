@@ -49,3 +49,13 @@ tasks.register("hello") {
         println("Hello")
     }
 }
+
+tasks.register("java_env") {
+    /**
+     * Using gradle.properties
+     */
+    val JAVA_ENV: String by project
+    doFirst {
+        println(JAVA_ENV)
+    }
+}
