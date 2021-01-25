@@ -4,6 +4,9 @@
 package kotlin05_gradle
 
 import com.google.gson.Gson
+import modules.Adnin
+
+//import models.Products
 
 class App {
     val greeting: String
@@ -25,4 +28,9 @@ fun main() {
     println(App().greeting)
     println(Hello.greeting)
     val gson: Gson = Gson()
+
+    val adnin = Adnin("Adnin")
+    println(adnin.name)
+
+//    val products: Products()
 }

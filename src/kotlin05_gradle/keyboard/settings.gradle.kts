@@ -7,9 +7,5 @@
  * in the user manual at https://docs.gradle.org/6.8.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = "kotlin05_gradle"
-include("app")
-include("modules")
-include("keyboard")
-//include("models")
-//include("utils")
+rootProject.name = "keyboard"
+include("lib")

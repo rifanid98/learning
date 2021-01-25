@@ -8,22 +8,15 @@
 
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.4.20"
+    id("org.jetbrains.kotlin.jvm")  version "1.4.20"
 
     // Apply the application plugin to add support for building a CLI application in Java.
-    application
+    `java-library`
 }
 
 repositories {
-    // Use JCenter for resolving dependencies.
     jcenter()
     mavenCentral()
-    /* dibutuhkan ketika membuat android app */
-    //google()
-    /* private repository*/
-    //maven {
-    //    url = uri("https://dl.bintray.com/bliblidotcom/maven")
-    //}
 }
 
 dependencies {
@@ -41,35 +34,4 @@ dependencies {
 
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
-
-    // menambahkan dependency
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
-    implementation("com.google.code.gson:gson:2.8.6")
-
-    // multi module project
-    implementation(project(":keyboard:lib"))
-}
-
-application {
-    // Define the main class for the application.
-    mainClass.set("kotlin05_gradle.AppKt")
-}
-
-/**
- * Custom Tasks
- */
-tasks.register("hello") {
-    doFirst {
-        println("Hello")
-    }
-}
-
-tasks.register("java_env") {
-    /**
-     * Using gradle.properties
-     */
-    val JAVA_ENV: String by project
-    doFirst {
-        println(JAVA_ENV)
-    }
 }
