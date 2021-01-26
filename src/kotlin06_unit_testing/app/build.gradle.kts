@@ -37,3 +37,13 @@ application {
     // Define the main class for the application.
     mainClass.set("kotlin06_unit_testing.AppKt")
 }
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile::class).all {
+    kotlinOptions {
+        jvmTarget = "15"
+    }
+}
