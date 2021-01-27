@@ -55,7 +55,7 @@ class BeforeAfter {
     }
 
     @Test
-a    fun test1() {
+   fun test1() {
         println("Test 1")
     }
 
