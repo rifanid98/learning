@@ -1,6 +1,7 @@
 package lesson03_membuat_test
 
 import kotlin06_unit_testing.Calculator
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
 /**
@@ -22,11 +23,13 @@ class CalculatorTest {
     @Test
     fun testAddSuccess(): Unit {
         val result = calculator.add(10, 10)
+        Assertions.assertEquals(20, result)
     }
 
     @Test
     fun testAddSuccess2(): Unit {
         val result = calculator.add(10, 10)
+        Assertions.assertEquals(20, result)
     }
 
 }
