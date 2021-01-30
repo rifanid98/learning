@@ -29,6 +29,7 @@ dependencies {
     // This dependency is used by the application.
     implementation("com.google.guava:guava:29.0-jre")
 
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.0")
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.7.0")
     testImplementation("org.mockito:mockito-junit-jupiter:3.7.7")
