@@ -1,5 +1,7 @@
 package lesson02_thread_utama
 
+import org.junit.jupiter.api.Test
+
 /**
  * Thread Utama
  *
@@ -10,5 +12,18 @@ package lesson02_thread_utama
  * - Begitu juga jika kita  membuat aplikasi kotlin Android, aplikasi tersebut
  *   akan berjalan di sebuah thread .
  */
-class MainThread {
+class MainThread  {
+
+    @Test
+    fun testThreadName() {
+        val threadName: String = Thread.currentThread().name
+        println(threadName)
+    }
+
+}
+
+
+fun main() {
+    val threadName: String = Thread.currentThread().name
+    println(threadName)
 }
