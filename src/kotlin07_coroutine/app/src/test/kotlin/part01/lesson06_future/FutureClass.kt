@@ -1,4 +1,4 @@
-package lesson06_future
+package part01.lesson06_future
 
 import org.junit.jupiter.api.Test
 import java.util.concurrent.Callable

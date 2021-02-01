@@ -1,4 +1,4 @@
-package lesson05_executor_service
+package part01.lesson05_executor_service
 
 import org.junit.jupiter.api.Test
 import java.util.*

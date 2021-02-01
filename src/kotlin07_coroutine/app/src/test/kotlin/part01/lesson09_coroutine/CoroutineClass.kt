@@ -1,4 +1,4 @@
-package lesson09_coroutine
+package part01.lesson09_coroutine
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay

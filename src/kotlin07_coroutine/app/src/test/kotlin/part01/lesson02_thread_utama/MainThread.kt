@@ -1,4 +1,4 @@
-package lesson02_thread_utama
+package part01.lesson02_thread_utama
 
 import org.junit.jupiter.api.Test
 

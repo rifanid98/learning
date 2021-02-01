@@ -1,4 +1,4 @@
-package lesson10_coroutine_ringan
+package part01.lesson10_coroutine_ringan
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay

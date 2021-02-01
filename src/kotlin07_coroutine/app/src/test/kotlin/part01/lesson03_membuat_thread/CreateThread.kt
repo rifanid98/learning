@@ -1,4 +1,4 @@
-package lesson03_membuat_thread
+package part01.lesson03_membuat_thread
 
 import org.junit.jupiter.api.Test
 import java.util.*

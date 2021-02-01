@@ -1,4 +1,4 @@
-package lesson04_multiple_thread
+package part01.lesson04_multiple_thread
 
 import org.junit.jupiter.api.Test
 import java.util.*
