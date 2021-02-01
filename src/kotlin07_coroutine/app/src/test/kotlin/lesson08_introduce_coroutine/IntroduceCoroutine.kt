@@ -42,7 +42,7 @@ import java.util.*
  * - Syarat menjalankan suspend function di Kotlin adalah, harus dipanggil dari
  *   suspend function lainnya.
  */
-class CoroutineClass {
+class IntroduceCoroutine {
 
     suspend fun helloWorld() {
         println("Hello: ${Date()} : ${Thread.currentThread().name}")
