@@ -1,4 +1,4 @@
-package lesson08_coroutine
+package lesson08_introduce_coroutine
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
