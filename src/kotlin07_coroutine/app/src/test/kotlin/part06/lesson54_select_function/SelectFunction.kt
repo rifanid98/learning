@@ -39,12 +39,31 @@ class SelectFunction {
     @Test
     fun testSelectChannel() {
         val scope = CoroutineScope(Dispatchers.IO)
-        val channel1 = scope.produce() { delay(1000); send(1000) }
+        val channel1 = scope.produce { delay(1000); send(1000) }
         val channel2 = scope.produce { delay(2000); send(2000) }
         runBlocking {
             val win = select<Int> {
                 channel1.onReceive { it }
                 channel2.onReceive { it }
+            }
+            println("Win $win")
+        }
+    }
+
+    /**
+     * select Function untuk Channel + Deferred
+     */
+    @Test
+    fun testSelectChannelDeferred() {
+        val scope = CoroutineScope(Dispatchers.IO)
+        val channel1 = scope.produce { delay(1000); send(1000) }
+        val channel2 = scope.produce { delay(2000); send(2000) }
+        val deferred = scope.async { delay(3000); 3000}
+        runBlocking {
+            val win = select<Int> {
+                channel1.onReceive { it }
+                channel2.onReceive { it }
+                deferred.onAwait { it }
             }
             println("Win $win")
         }
