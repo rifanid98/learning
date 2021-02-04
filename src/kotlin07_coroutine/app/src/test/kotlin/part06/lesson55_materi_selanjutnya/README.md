@@ -1,4 +1,4 @@
 # Materi Selanjutnya
 
-- Android Kotlin Developer
-- Backend Kotlin Developer
+- Android Kotlin Development
+- Backend Kotlin Development
