@@ -1,6 +1,7 @@
 package restful.service
 
 import restful.model.CreateProductRequest
+import restful.model.ListProductRequest
 import restful.model.ProductResponse
 import restful.model.UpdateProductRequest
 
@@ -13,5 +14,7 @@ interface ProductService {
     fun update(id: String, updateProductRequest: UpdateProductRequest): ProductResponse
 
     fun delete(id: String)
+
+    fun list(listProductRequest: ListProductRequest): List<ProductResponse>
 
 }

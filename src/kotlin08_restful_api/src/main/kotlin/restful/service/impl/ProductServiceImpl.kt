@@ -1,16 +1,19 @@
 package restful.service.impl
 
+import org.springframework.data.domain.PageRequest
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
 import restful.entity.Product
 import restful.error.NotFoundException
 import restful.helper.Validation
 import restful.model.CreateProductRequest
+import restful.model.ListProductRequest
 import restful.model.ProductResponse
 import restful.model.UpdateProductRequest
 import restful.repository.ProductRepository
 import restful.service.ProductService
 import java.util.*
+import java.util.stream.Collectors
 
 @Service
 class ProductServiceImpl(
@@ -77,6 +80,18 @@ class ProductServiceImpl(
         } else {
             return this.handleResponse(product)
         }
+    }
+
+    /**
+     * Get list products
+     * @param listProductRequest
+     * @return List<ProductResponse>
+     */
+    override fun list(listProductRequest: ListProductRequest): List<ProductResponse> {
+        val datas = productRepository.findAll(PageRequest.of(listProductRequest.page, listProductRequest.size))
+        val products: List<Product> = datas.get().collect(Collectors.toList())
+
+        return products.map { this.handleResponse(it) }
     }
 
     /**

@@ -1,10 +1,7 @@
 package restful.controller
 
 import org.springframework.web.bind.annotation.*
-import restful.model.CreateProductRequest
-import restful.model.ProductResponse
-import restful.model.UpdateProductRequest
-import restful.model.WebResponse
+import restful.model.*
 import restful.service.ProductService
 
 @RestController
@@ -67,4 +64,23 @@ class ProductController(val productService: ProductService) {
             data = id
         )
     }
+
+    @GetMapping(
+        value = ["/api/products"],
+        produces = ["application/json"]
+    )
+    fun listProducts(
+        @RequestParam(value = "size", defaultValue = "1") size: Int,
+        @RequestParam(value = "page", defaultValue = "0") page: Int
+    ): WebResponse<List<ProductResponse>> {
+        val request = ListProductRequest(page = page, size = size)
+        val products = productService.list(request)
+
+        return WebResponse(
+            code = 200,
+            status = "OK",
+            data = products
+        )
+    }
+
 }
