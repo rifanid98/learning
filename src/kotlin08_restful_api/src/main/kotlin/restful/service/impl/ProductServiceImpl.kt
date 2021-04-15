@@ -7,6 +7,7 @@ import restful.error.NotFoundException
 import restful.helper.Validation
 import restful.model.CreateProductRequest
 import restful.model.ProductResponse
+import restful.model.UpdateProductRequest
 import restful.repository.ProductRepository
 import restful.service.ProductService
 import java.util.*
@@ -41,18 +42,64 @@ class ProductServiceImpl(
     }
 
     /**
+     * Update product
+     * @param id String
+     * @param updateProductRequest
+     * @return ProductResponse
+     */
+    override fun update(id: String, updateProductRequest: UpdateProductRequest): ProductResponse {
+        val product = this.findProductById(id)
+
+        validation.validate(updateProductRequest)
+
+        product.apply {
+            name = updateProductRequest.name!!
+            price = updateProductRequest.price!!
+            quantity = updateProductRequest.quantity!!
+            updatedAt = Date()
+        }
+
+        productRepository.save(product)
+
+        return this.handleResponse(product)
+    }
+
+    /**
      * Get all products
      * @param id String
      * @return ProductResponse
      */
     override fun get(id: String): ProductResponse {
-        val product = productRepository.findByIdOrNull(id)
+        val product = this.findProductById(id)
 
         if (product == null) {
             throw NotFoundException()
         } else {
             return this.handleResponse(product)
         }
+    }
+
+    /**
+     * Delete product
+     * @param id String
+     * @return
+     */
+    override fun delete(id: String) {
+        val product = this.findProductById(id)
+        productRepository.delete(product)
+    }
+
+    /**
+     * Handle find product by id
+     */
+    private fun findProductById(id: String): Product {
+        val product = productRepository.findByIdOrNull(id)
+
+        if (product == null) {
+            throw NotFoundException()
+        }
+
+        return product
     }
 
     /**

@@ -3,6 +3,7 @@ package restful.controller
 import org.springframework.web.bind.annotation.*
 import restful.model.CreateProductRequest
 import restful.model.ProductResponse
+import restful.model.UpdateProductRequest
 import restful.model.WebResponse
 import restful.service.ProductService
 
@@ -38,4 +39,32 @@ class ProductController(val productService: ProductService) {
         )
     }
 
+    @PutMapping(
+        value = ["/api/products/{idProduct}"],
+        produces = ["application/json"],
+        consumes = ["application/json"],
+    )
+    fun updateProduct(@PathVariable("idProduct") id: String, @RequestBody updateProductRequest: UpdateProductRequest): WebResponse<ProductResponse> {
+        val productResponse = productService.update(id, updateProductRequest);
+
+        return WebResponse(
+            code = 200,
+            status = "OK",
+            data = productResponse
+        )
+    }
+
+    @DeleteMapping(
+        value = ["/api/products/{idProduct}"],
+        produces = ["application/json"]
+    )
+    fun deleteProduct(@PathVariable("idProduct") id: String): WebResponse<String> {
+        productService.delete(id)
+
+        return WebResponse(
+            code = 200,
+            status = "OK",
+            data = id
+        )
+    }
 }
