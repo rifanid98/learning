@@ -15,6 +15,7 @@
         "**/.idea": true,
         "**/out": true,
         "**/src": true,
+        "**/.gradle": true,
         // vue
         "**/vue**": true,
         // typescript
