@@ -9,7 +9,7 @@ import "testing"
 // - go test -v ./folder_name
 // - go test -v -run=TestName
 func TestHelloWorld(t *testing.T) {
-	result := HelloWorld("Adninn")
+	result := HelloWorld("Adnin")
 	if result != "Hello Adnin" {
 		// panic("Result must be Hello Adnin")
 	}

@@ -25,7 +25,7 @@ import (
 //	 kita butuh menambahkan library untuk melakukan assertion ini
 
 func TestAssertion(t *testing.T) {
-	result := HelloWorld("Adninn")
+	result := HelloWorld("Adnin")
 	failMessage := "Result must be Hello Adnin"
 	assert.Equal(t, "Hello Adnin", result, failMessage)
 	fmt.Println("Test Selesai") // dieksekusi karena memanggil t.Fail()
@@ -40,7 +40,7 @@ func TestAssertion(t *testing.T) {
 //   dilanjutkan
 
 func TestRequire(t *testing.T) {
-	result := HelloWorld("Adninn")
+	result := HelloWorld("Adnin")
 	failMessage := "Result must be Hello Adnin"
 	require.Equal(t, "Hello Adnin", result, failMessage)
 	fmt.Println("Test Selesai") // tidak dieksekusi karena memanggil t.Fatal()
