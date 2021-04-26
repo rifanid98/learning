@@ -21,7 +21,7 @@ import (
 //	 eksekusi unit test
 
 func TestHelloWorldFail(t *testing.T) {
-	result := HelloWorld("Adnin")
+	result := HelloWorld("Adninn")
 	if result != "Hello Adnin" {
 		t.Fail()
 	}
@@ -30,7 +30,7 @@ func TestHelloWorldFail(t *testing.T) {
 }
 
 func TestHelloWorldFailNow(t *testing.T) {
-	result := HelloWorld("Adnin")
+	result := HelloWorld("Adninn")
 	if result != "Hello Adnin" {
 		t.FailNow()
 	}
@@ -50,7 +50,7 @@ func TestHelloWorldFailNow(t *testing.T) {
 //	 berhenti
 
 func TestHelloWorldError(t *testing.T) {
-	result := HelloWorld("Adnin")
+	result := HelloWorld("Adninn")
 	if result != "Hello Adnin" {
 		t.Error("Result must be Hello Adnin")
 	}
@@ -59,7 +59,7 @@ func TestHelloWorldError(t *testing.T) {
 }
 
 func TestHelloWorldFatal(t *testing.T) {
-	result := HelloWorld("Adnin")
+	result := HelloWorld("Adninn")
 	if result != "Hello Adnin" {
 		t.Fatal("Result must be Hello Adnin")
 	}
