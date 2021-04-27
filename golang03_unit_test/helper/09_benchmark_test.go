@@ -50,3 +50,24 @@ func BenchmarkTest(b *testing.B) {
 		HelloWorld("Adnin")
 	}
 }
+
+// # Sub Benchmark
+// - Sama seperti testing.T, di testing.B juga kita bisa membuat sub benchmark menggunakan function Run()
+
+// # Menjalankan Hanya Sub Benchmark
+// - Saat kita menjalankan benchmark function, maka semua sub benchmark akan berjalan
+// - Namun jika kita ingin menjalankan salah satu sub benchmark saja, kita bisa gunakan perintah :
+// 	 go test -v -bench=BenchmarkNama/NamaSub
+
+func BenchmarkSub(b *testing.B) {
+	b.Run("SubBenchmark1", func(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			HelloWorld("Adnin")
+		}
+	})
+	b.Run("SubBenchmark2", func(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			HelloWorld("Adnin")
+		}
+	})
+}
