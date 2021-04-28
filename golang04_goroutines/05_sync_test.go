@@ -173,3 +173,33 @@ func TestSyncWaitGroup(t *testing.T) {
 	group.Wait()
 	fmt.Println("Complete")
 }
+
+// # sync.Once
+// - Once adalah fitur di Go-Lang yang bisa kita gunakan untuk memastikan bahsa
+// 	 sebuah function di eksekusi hanya sekali
+// - Jadi berapa banyak pun goroutine yang mengakses, bisa dipastikan bahwa
+// 	 goroutine yang pertama yang bisa mengeksekusi function nya
+// - Goroutine yang lain akan di hiraukan, artinya function tidak akan dieksekusi
+// 	 lagi
+
+func TestSyncOnce(t *testing.T) {
+	var counter int
+
+	onlyOnce := func() {
+		counter++
+	}
+
+	var once sync.Once
+	var group sync.WaitGroup
+
+	for i := 0; i < 100; i++ {
+		go func() {
+			group.Add(1)
+			once.Do(onlyOnce)
+			group.Done()
+		}()
+	}
+
+	group.Wait()
+	fmt.Println("counter : ", counter)
+}
