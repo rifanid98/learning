@@ -80,3 +80,67 @@ func TestSyncRWMutex(t *testing.T) {
 	time.Sleep(7 * time.Second)
 	fmt.Println("Final Balance : ", account.GetBalance())
 }
+
+// # Deadlock
+// - Hati-hati saat membuat aplikasi yang parallel atau concurrent,
+// 	 masalah yang sering kita hadapi adalah Deadlock
+// - Deadlock adalah keadaan dimana sebuah proses goroutine saling
+// 	 menunggu lock sehingga tidak ada satupun goroutine yang bisa jalan
+// - Sekarang kita coba simulasikan proses deadlock
+
+type UserBalance struct {
+	Mutex   sync.Mutex
+	Name    string
+	Balance int
+}
+
+func (user *UserBalance) Lock() {
+	user.Mutex.Lock()
+	fmt.Println("Lock ", user.Name)
+}
+
+func (user *UserBalance) Unlock() {
+	user.Mutex.Unlock()
+	fmt.Println("Unlock ", user.Name)
+}
+
+func (user *UserBalance) Change(amount int) {
+	user.Balance = user.Balance + amount
+}
+
+func transfer(user1 *UserBalance, user2 *UserBalance, amount int) {
+	user1.Lock()
+	user1.Change(-amount)
+
+	time.Sleep(1 * time.Second)
+
+	user2.Lock()
+	user2.Change(amount)
+
+	time.Sleep(1 * time.Second)
+
+	user1.Unlock()
+	user2.Unlock()
+}
+
+func TestDeadLock(t *testing.T) {
+	user1 := UserBalance{
+		Name:    "AdninRifandi",
+		Balance: 10_000,
+	}
+
+	user2 := UserBalance{
+		Name:    "SutantoPutra",
+		Balance: 10_000,
+	}
+
+	// transfer(&user1, &user2, 1000)
+	go transfer(&user1, &user2, 1000)
+	go transfer(&user2, &user1, 2000)
+
+	time.Sleep(5 * time.Second)
+
+	fmt.Println("User 1 ", user1.Name, " balance ", user1.Balance)
+	fmt.Println("User 2 ", user2.Name, " balance ", user2.Balance)
+
+}
