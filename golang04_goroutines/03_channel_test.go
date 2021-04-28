@@ -2,6 +2,7 @@ package golang04_goroutines
 
 import (
 	"fmt"
+	"strconv"
 	"testing"
 	"time"
 )
@@ -149,4 +150,29 @@ func TestBufferedChannel(t *testing.T) {
 
 	fmt.Println("channel cpacity ", cap(channel))
 	fmt.Println("channel length of stored data ", len(channel))
+}
+
+// # Range Channel
+// - Kadang-kadang ada kasus sebuah channel dikirim data secara terus menerus oleh pengirim
+// - Dan kadang tidak jelas kapan channel tersebut akan berhenti menerima data
+// - Salah satu yang bisa kita lakukan adalah dengan menggunakan perulangan range ketika
+// 	 menerima data dari channel
+// - Ketika sebuah channel di close(), maka secara otomatis perulangan tersebut akan berhenti
+// - Ini lebih sederhana dari pada kita melakukan pengecekan channel secara manual
+
+func TestRangeChannel(t *testing.T) {
+	channel := make(chan string)
+
+	go func() {
+		for i := 0; i < 10; i++ {
+			channel <- "Loop ke " + strconv.Itoa(i+1)
+		}
+		close(channel)
+	}()
+
+	for data := range channel {
+		fmt.Println(data)
+	}
+
+	fmt.Println("Selesai")
 }
