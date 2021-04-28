@@ -203,3 +203,42 @@ func TestSyncOnce(t *testing.T) {
 	group.Wait()
 	fmt.Println("counter : ", counter)
 }
+
+// # sync.Pool
+// - Pool adalah implementasi design pattern bernama object pool pattern.
+// - Sederhananya, design pattern Pool ini digunakan untuk menyimpan data,
+// 	 selanjutnya untuk menggunakan datanya, kita bisa mengambil dari Pool,
+// 	 dan setelah selesai menggunakan datanya, kita bisa menyimpan kembali ke
+// 	 Pool nya
+// - Implementasi Pool di Go-Lang ini sudah aman dari problem race condition
+
+// func getDataFromPool(group *sync.WaitGroup, pool *sync.Pool) {
+func getDataFromPool(group *sync.WaitGroup, pool *sync.Pool) {
+	defer group.Done()
+
+	group.Add(1)
+	data := pool.Get()
+	fmt.Println(data)
+	pool.Put(data)
+}
+
+func TestSyncPool(t *testing.T) {
+	group := &sync.WaitGroup{}
+	pool := sync.Pool{
+		// override default value (nil)
+		New: func() interface{} {
+			return "Empty"
+		},
+	}
+
+	pool.Put("Adnin")
+	pool.Put("Rifandi")
+	pool.Put("Sutanto")
+
+	for i := 0; i < 10; i++ {
+		go getDataFromPool(group, &pool)
+	}
+
+	group.Wait()
+	fmt.Println("Selesai")
+}
