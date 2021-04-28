@@ -242,3 +242,38 @@ func TestSyncPool(t *testing.T) {
 	group.Wait()
 	fmt.Println("Selesai")
 }
+
+// # sync.Map
+// - Go-Lang memiliki sebuah struct beranama sync.Map
+// - Map ini mirip Go-Lang map, namun yang membedakan, Map ini aman
+// 	 untuk menggunaan concurrent menggunakan goroutine
+// - Ada beberapa function yang bisa kita gunakan di Map :
+//   > Store(key, value) untuk menyimpan data ke Map
+//   > Load(key) untuk mengambil data dari Map menggunakan key
+//   > Delete(key) untuk menghapus data di Map menggunakan key
+//   > Range(function(key, value)) digunakan untuk melakukan iterasi
+// 	   seluruh data di Map
+
+func TestSyncMap(t *testing.T) {
+	group := sync.WaitGroup{}
+	data := sync.Map{}
+
+	addToMap := func(group *sync.WaitGroup, data *sync.Map, value int) {
+		defer group.Done()
+		group.Add(1)
+		data.Store(value, value)
+	}
+
+	for i := 0; i < 100; i++ {
+		go addToMap(&group, &data, i)
+	}
+
+	group.Wait()
+
+	counter := 1
+	data.Range(func(key, value interface{}) bool {
+		fmt.Println("ke ", counter, ": ", key, " ", value)
+		counter++
+		return true
+	})
+}
