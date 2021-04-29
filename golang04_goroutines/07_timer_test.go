@@ -2,6 +2,7 @@ package golang04_goroutines
 
 import (
 	"fmt"
+	"sync"
 	"testing"
 	"time"
 )
@@ -29,4 +30,26 @@ func TestTimeAfter(t *testing.T) {
 
 	time := <-channel
 	fmt.Println(time)
+}
+
+// # time.AfterFunc
+// - Kadang ada kebutuhan kita ingin menjalankan sebuah function dengan delay
+// 	 waktu tertentu
+// - Kita bisa memanfaatkan Timer dengan menggunakan function time.AfterFunc()
+// - Kita tidak perlu lagi menggunakan channel nya, cukup kirim kan function
+// 	 yang akan dipanggil ketika Timer mengirim kejadiannya
+
+func TestTimeAfterFunc(t *testing.T) {
+	group := sync.WaitGroup{}
+	group.Add(1)
+
+	time.AfterFunc(1*time.Second, func() {
+		fmt.Println("Execute after 1 second")
+		fmt.Println(time.Now())
+		group.Done()
+	})
+
+	fmt.Println(time.Now())
+
+	group.Wait()
 }
