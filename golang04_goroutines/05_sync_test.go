@@ -277,3 +277,51 @@ func TestSyncMap(t *testing.T) {
 		return true
 	})
 }
+
+// # sync.Cond
+// - Cond adalah adalah implementasi locking berbasis kondisi.
+// - Cond membutuhkan Locker (bisa menggunakan Mutex atau RWMutex) untuk
+// 	 implementasi locking nya, namun berbeda dengan Locker biasanya, di
+// 	 Cond terdapat function Wait() untuk menunggu apakah perlu menunggu
+// 	 atau tidak
+// - Function Signal() bisa digunakan untuk memberi tahu sebuah goroutine
+// 	 agar tidak perlu menunggu lagi, sedangkan function Broadcast()
+// 	 digunakan untuk memberi tahu semua goroutine agar tidak perlu
+// 	 menunggu lagi
+// - Untuk membuat Cond, kita bisa menggunakan function sync.NewCond(Locker)
+
+var locker = sync.Mutex{}
+var cond = sync.NewCond(&locker)
+var group = sync.WaitGroup{}
+
+func WaitCondition(value int) {
+	defer group.Done()
+	group.Add(1)
+
+	cond.L.Lock()
+	cond.Wait()
+	fmt.Println("Done ", value)
+	cond.L.Unlock()
+}
+
+func TestSyncCond(t *testing.T) {
+	for i := 0; i < 10; i++ {
+		go WaitCondition(i)
+	}
+
+	// single signal
+	// go func() {
+	// 	for i := 0; i < 10; i++ {
+	// 		time.Sleep(1 * time.Second)
+	// 		cond.Signal()
+	// 	}
+	// }()
+
+	// broadcast
+	go func() {
+		time.Sleep(1 * time.Second)
+		cond.Broadcast()
+	}()
+
+	group.Wait()
+}
