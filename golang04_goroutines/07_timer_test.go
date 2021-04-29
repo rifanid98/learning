@@ -71,3 +71,16 @@ func TestTimeTicker(t *testing.T) {
 		fmt.Println(tick)
 	}
 }
+
+// # time.Tick
+// - Kadang kita tidak butuh data Ticker nya, kita hanya butuh channel nya saja
+// - Jika demikian, kita bisa menggunakan function timer.Tick(duration), function
+// 	 ini tidak akan mengembalikan Ticker, hanya mengembalikan channel timer nya saja
+
+func TestTimeTick(t *testing.T) {
+	channel := time.Tick(1 * time.Second)
+
+	for time := range channel {
+		fmt.Println(time)
+	}
+}
