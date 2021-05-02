@@ -47,3 +47,10 @@ func TestSQLInjection(t *testing.T) {
 		fmt.Println("-------------------------------------------")
 	}
 }
+
+// # Solusinya?
+// - Jangan membuat query SQL secara manual dengan menggabungkan String
+// 	 secara bulat-bulat
+// - Jika kita membutuhkan parameter ketika membuat SQL, kita bisa
+// 	 menggunakan function Execute atau Query dengan parameter yang akan
+// 	 kita bahas di chapter selanjutnya
