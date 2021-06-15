@@ -19,6 +19,7 @@ export const typeormConfig = async (
     database: configService.get('DB_NAME'),
     autoLoadEntities: true,
     synchronize: true,
+    entities: [__dirname + '/../**/*.entity.{js,ts}']
   };
 
   return typeOrmModuleOptions;
