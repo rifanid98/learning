@@ -7,12 +7,7 @@ import { User } from './users.entity';
 
 @Controller('auth')
 export class AuthController {
-  constructor(
-    private authService: AuthService,
-  ) // private configService: ConfigService,
-  {
-    // console.log(this.configService.get('NODE_ENV'), '<<< NODE_ENV');
-  }
+  constructor(private authService: AuthService) {}
 
   @Post('/signup')
   signUp(@Body() authCredentialsDto: AuthCredentialsDto): Promise<User> {
