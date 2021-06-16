@@ -8,9 +8,9 @@ async function bootstrap() {
   if (process.env.NODE_ENV !== 'production') {
     app.enableCors();
   } else {
-    app.enableCors({ origin: process.env.S3_ORIGIN });
+    app.enableCors({ origin: process.env.ORIGIN });
     new Logger('bootstrap').log(
-      `Accepting requests from origin ${process.env.S3_ORIGIN}`,
+      `Accepting requests from origin ${process.env.ORIGIN}`,
     );
   }
   app.useGlobalPipes(new ValidationPipe());
